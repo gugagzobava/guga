@@ -14,11 +14,11 @@ public class ierarqia extends GraphicsProgram {
 	private static final double BIG_GAP_LENGTH = 30;
 
 	public void run() {
-		drawRect(getWidth() / 2 - RECT_WIDTH / 2, getHeight() / 2, RECT_WIDTH, RECT_HEIGHT); // MidRect
+		drawRect(getWidth() / 2 - RECT_WIDTH / 2, getHeight() / 2, RECT_WIDTH, RECT_HEIGHT, "ConsoleProgram"); // MidRect
 		drawRect(getWidth() / 2 - RECT_WIDTH / 2, getHeight() / 2 - RECT_HEIGHT * 3 / 2 - BIG_GAP_LENGTH, RECT_WIDTH,
-				RECT_HEIGHT); // UpperRect
-		drawRect(getWidth() / 2 - RECT_WIDTH * 3 / 2 - GAP_LENGTH, getHeight() / 2, RECT_WIDTH, RECT_HEIGHT); // LeftRect
-		drawRect(getWidth() / 2 + RECT_WIDTH / 2 + GAP_LENGTH, getHeight() / 2, RECT_WIDTH, RECT_HEIGHT); // RightRect
+				RECT_HEIGHT, "Program"); // UpperRect
+		drawRect(getWidth() / 2 - RECT_WIDTH * 3 / 2 - GAP_LENGTH, getHeight() / 2, RECT_WIDTH, RECT_HEIGHT, "GraphicsProgram"); // LeftRect
+		drawRect(getWidth() / 2 + RECT_WIDTH / 2 + GAP_LENGTH, getHeight() / 2, RECT_WIDTH, RECT_HEIGHT, "DialogProgram"); // RightRect
 		connect(getWidth() / 2 + RECT_WIDTH + GAP_LENGTH, getHeight() / 2, getWidth() / 2,
 				getHeight() / 2 - RECT_HEIGHT * 1 / 2 - BIG_GAP_LENGTH); // connectsrighttoupper
 
@@ -35,9 +35,14 @@ public class ierarqia extends GraphicsProgram {
 
 	}
 
-	private void drawRect(double i, double j, double rectWidth, double rectHeight) {
+	private void drawRect(double i, double j, double rectWidth, double rectHeight, String text) {
 		GRect rect = new GRect(i, j, rectWidth, rectHeight);
 		add(rect);
+		GLabel label = new GLabel(text);
+
+		double labelX = i + (rectWidth - label.getWidth()) / 2;
+		double labelY = j + (rectHeight + label.getAscent()) / 2;
+		add(label, labelX, labelY);
 
 	}
 
