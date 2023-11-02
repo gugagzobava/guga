@@ -10,12 +10,12 @@ public class problem14 extends GraphicsProgram {
 	private static final double eyeHeight = 50;
 	private static final double mouthWidth = 150;
 	private static final double mouthHeight = 30;
-
-	public void run() {
+			
+	public void run(){
 		drawHead();
 		drawLeftEye();
 		drawRightEye();
-		drawMouth();
+		drawMouth();	
 	}
 
 	private void drawMouth() {
@@ -29,34 +29,34 @@ public class problem14 extends GraphicsProgram {
 	}
 
 	private void drawRightEye() {
-		double x = getWidth() / 2 + headWidth / 4 - eyeWidth / 2;
-		double y = getHeight() / 2 - headHeight / 4 - eyeHeight / 2;
-		GRect eye = new GRect(x, y, eyeWidth, eyeHeight);
-		eye.setFilled(true);
-		eye.setFillColor(Color.YELLOW);
-		eye.setColor(Color.yellow);
-		add(eye);
+	    double x = getWidth() / 2 + headWidth / 4 -  eyeWidth / 2;
+	    double y = getHeight() / 2 - headHeight / 4 - eyeHeight / 2;
+	    GRect eye = new GRect(x, y, eyeWidth, eyeHeight);
+	    eye.setFilled(true);
+	    eye.setFillColor(Color.YELLOW);
+	    eye.setColor(Color.yellow);
+	    add(eye);
 	}
 
 	private void drawLeftEye() {
-		double x = getWidth() / 2 - headWidth / 4 - eyeWidth / 2;
-		double y = getHeight() / 2 - headHeight / 4 - eyeHeight / 2;
-		GRect eye = new GRect(x, y, eyeWidth, eyeHeight);
-		eye.setFilled(true);
-		eye.setFillColor(Color.YELLOW);
-		eye.setColor(Color.yellow);
-		add(eye);
-
+	    double x = getWidth() / 2 - headWidth / 4 -  eyeWidth / 2;
+	    double y = getHeight() / 2 - headHeight / 4 - eyeHeight / 2;
+	    GRect eye = new GRect(x, y, eyeWidth, eyeHeight);
+	    eye.setFilled(true);
+	    eye.setFillColor(Color.YELLOW);
+	    eye.setColor(Color.yellow);
+	    add(eye);
+		
 	}
 
 	private void drawHead() {
-		double x = getWidth() / 2 - headWidth / 2;
-		double y = getHeight() / 2 - headHeight / 2;
-		GRect head = new GRect(x, y, headWidth, headHeight);
-		head.setFilled(true);
-		head.setFillColor(Color.GRAY);
-		head.setColor(Color.GRAY);
-		add(head);
-
+	     double x = getWidth() / 2 - headWidth / 2;
+	     double y = getHeight() / 2 - headHeight / 2;
+	     GRect head = new GRect(x, y, headWidth, headHeight);
+	     head.setFilled(true);
+	     head.setFillColor(Color.GRAY);
+	     head.setColor(Color.GRAY);
+	     add(head);
+		
 	}
 }
