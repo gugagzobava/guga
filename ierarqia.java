@@ -5,7 +5,6 @@ import java.awt.*;
 public class ierarqia extends GraphicsProgram {
 	/** Width of each rectangle in pixels */
 	private static final double RECT_WIDTH = 100;
-
 	/** height of each rectangle in pixels */
 	private static final double RECT_HEIGHT = 30;
 	/** Gap length between rectangles in pixels */
