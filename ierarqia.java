@@ -4,14 +4,14 @@ import java.awt.*;
 
 public class ierarqia extends GraphicsProgram {
 	/** Width of each rectangle in pixels */
-	private static final double RECT_WIDTH = 100;
+	private static final double RECT_WIDTH = 200;
 
 	/** height of each rectangle in pixels */
-	private static final double RECT_HEIGHT = 30;
+	private static final double RECT_HEIGHT = 80;
 
-	private static final double GAP_LENGTH = 30;
+	private static final double GAP_LENGTH = 80;
 
-	private static final double BIG_GAP_LENGTH = 30;
+	private static final double BIG_GAP_LENGTH = 80;
 
 	public void run() {
 		drawRect(getWidth() / 2 - RECT_WIDTH / 2, getHeight() / 2, RECT_WIDTH, RECT_HEIGHT, "ConsoleProgram"); // MidRect
