@@ -11,7 +11,7 @@ public class ierarqia extends GraphicsProgram {
 	/** Gap length between rectangles in pixels */
 	private static final double GAP_LENGTH = 30;
 	/** Bigger gap length between rectangles in pixels */
-	private static final double BIG_GAP_LENGTH = 8000;
+	private static final double BIG_GAP_LENGTH = 800;
 
 	public void run() {
 		//draw each rectangle
