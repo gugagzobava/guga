@@ -32,22 +32,12 @@ public class ierarqia extends GraphicsProgram {
 	private void connect(double i, double j, double k, double l) {
 		GLine line = new GLine(i, j, k, l);
 		add(line);
-		
+
 	}
 
 	private void drawRect(double i, double j, double rectWidth, double rectHeight) {
 		GRect rect = new GRect(i, j, rectWidth, rectHeight);
 		add(rect);
-
-	}
-
-	private void connectMidToUpper() {
-		double midRectWidth = getWidth() / 2;
-		double midRectHeight = getHeight() / 2;
-		double upperRectWidth = getWidth() / 2;
-		double upperRectHeight = getHeight() / 2 - RECT_HEIGHT * 1 / 2 - BIG_GAP_LENGTH;
-		GLine line = new GLine(midRectWidth, midRectHeight, upperRectWidth, upperRectHeight);
-		add(line);
 
 	}
 
