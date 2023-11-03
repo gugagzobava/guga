@@ -17,7 +17,7 @@ public class targeti extends GraphicsProgram {
 	private void drawCircle(double d, double e, double f, double g, Color paint) {
 		GOval circle = new GOval (d, e, f, g);
 		circle.setFilled(true);
-		circle.setFillColor(paint);
+		circle.setColor(paint);
 		add(circle);
 		
 	}
