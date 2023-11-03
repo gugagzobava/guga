@@ -4,8 +4,8 @@ import java.awt.*;
 
 public class targeti extends GraphicsProgram {
 	private static final double r = 72;
-	private static final double a = 46.7716535433;
-	private static final double b = 21.5433070866;
+	private static final double a = 1.65 * 72 / 2.54;
+	private static final double b = 0.76 * 72 / 2.54;
 
 	public void run() {
 		Color red = Color.RED;
