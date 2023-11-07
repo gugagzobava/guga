@@ -12,7 +12,7 @@ public class problem40 extends GraphicsProgram{
 				dx = -dx;
 			}
 				
-			pause(10);
+			pause(2);
 			
 		}
 		
