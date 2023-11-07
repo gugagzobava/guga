@@ -1,4 +1,13 @@
+import java.awt.Color;
 
-public class triali {
+import acm.graphics.GOval;
+import acm.program.GraphicsProgram;
+
+public class triali extends GraphicsProgram{
+	public void run() {
+		GOval planet = new GOval (150, 150);
+		planet.setFilled(true);
+		planet.setColor(Color.RED);
+	}
 
 }
