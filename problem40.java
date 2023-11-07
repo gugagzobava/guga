@@ -8,7 +8,7 @@ public class problem40 extends GraphicsProgram{
 		double dx = 1;
 		while (true){
 			ball.move(dx,0);
-			if (ball.getX() <= 0 || ball.getX() + ball.getWidth() / 2 >= 0){
+			if (ball.getX() <= 0 || ball.getX() + ball.getWidth() / 2 >= getWidth() / 2){
 				dx = -dx;
 			}
 				
