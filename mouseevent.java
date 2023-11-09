@@ -3,7 +3,7 @@ import java.awt.Color;
 import acm.graphics.GObject;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
-import javafx.scene.input.MouseEvent;
+import java.awt.event.MouseEvent;
 
 public class mouseevent extends GraphicsProgram{
 	public void run() {
