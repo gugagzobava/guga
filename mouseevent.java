@@ -3,9 +3,8 @@ import java.awt.Color;
 import acm.graphics.GObject;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
-import javafx.scene.input.MouseEvent;
-
-public class mouseevent extends GraphicsProgram{
+import java.awt.event.MouseEvent;
+class mouseevent extends GraphicsProgram{
 	public void run() {
 		addMouseListeners();
 		GRect rect = new GRect (100, 100);
