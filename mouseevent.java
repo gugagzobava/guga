@@ -3,8 +3,9 @@ import java.awt.Color;
 import acm.graphics.GObject;
 import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
-import java.awt.event.MouseEvent;
-class mouseevent extends GraphicsProgram{
+import javafx.scene.input.MouseEvent;
+
+public class mouseevent extends GraphicsProgram{
 	public void run() {
 		addMouseListeners();
 		GRect rect = new GRect (100, 100);
@@ -18,11 +19,11 @@ class mouseevent extends GraphicsProgram{
 		addMouseListeners();
 	}
 	public void mouseClicked (MouseEvent e) {
-		e.getY();
+//		e.getY();
 		
 		GObject obj = getElementAt(e.getX(), e.getY());
 		if (obj != null){
-			obj.setColor(Color.RED);
+			obj.setColor(Color.red);
 		}
 	}
 
