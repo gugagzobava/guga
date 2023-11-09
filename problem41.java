@@ -4,7 +4,7 @@ import acm.util.RandomGenerator;
 
 public class problem41 extends GraphicsProgram {
 	private static final int RADIUS = 20;
-	private static final int DELAY = 20;
+	private static final int DELAY = 5;
 	private static final double V_X_MAX = 3;
 	private static final double V_Y_MAX = 3;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
