@@ -23,7 +23,7 @@ public class mouseevent extends GraphicsProgram{
 		
 		GObject obj = getElementAt(e.getX(), e.getY());
 		if (obj != null){
-			obj.setColor(Color.RED);
+			obj.setFillColor(Color.RED);
 		}
 	}
 
