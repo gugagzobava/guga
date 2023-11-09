@@ -7,6 +7,7 @@ import javafx.scene.input.MouseEvent;
 
 public class mouseevent extends GraphicsProgram{
 	public void run() {
+		addMouseListeners();
 		GRect rect = new GRect (100, 100);
 		rect.setFilled(true);
 		add(rect);
