@@ -18,7 +18,7 @@ public class mouseevent extends GraphicsProgram{
 		addMouseListeners();
 	}
 	public void mouseClicked (MouseEvent e) {
-		e.getY();
+//		e.getY();
 		
 		GObject obj = getElementAt(e.getX(), e.getY());
 		if (obj != null){
