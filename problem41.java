@@ -4,7 +4,7 @@ import acm.util.RandomGenerator;
 
 public class problem41 extends GraphicsProgram {
 	private static final int RADIUS = 20;
-	private static final int DELAY = 100;
+	private static final int DELAY = 5;
 	private static final double V_X_MAX = 3;
 	private static final double V_Y_MAX = 3;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
@@ -13,8 +13,8 @@ public class problem41 extends GraphicsProgram {
 		ball.setFilled(true);
 		add(ball, getWidth() / 2 - RADIUS, getHeight() / 2 - RADIUS);
 		
-		double vx = rgen.nextDouble(0, V_X_MAX);
-		double vy = rgen.nextDouble(0, V_Y_MAX);
+		double vx = rgen.nextDouble(1, V_X_MAX);
+		double vy = rgen.nextDouble(1, V_Y_MAX);
 		while (true) {
 			ball.move(vx, vy);
 			pause(DELAY);
