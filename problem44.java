@@ -11,19 +11,20 @@ public class problem44 extends GraphicsProgram {
 		addMouseListeners();
 	}
 
-	public void mouseClicked(MouseEvent e) {
-		oval = new GOval(d, d);
-		oval.setFilled(true);
-		add(oval, e.getX(), e.getY());
-		moveOvalDown();
+	 public void mouseClicked(MouseEvent e) {
+	        oval = new GOval(d, d);
+	        oval.setFilled(true);
+	        add(oval, e.getX(), e.getY());
+	  //      moveOvalDown();
+	        
+	        }
+	 
 
-	}
-
-	private void moveOvalDown() {
-		for (int i = 0; i < getHeight(); i++) {
-			oval.move(0, 1);
-			pause(5);
-repaint();
-		}
-	}
+//	private void moveOvalDown() {
+//		for (int i = 0; i < getHeight(); i++) {
+//            oval.move(0, 1);
+//            pause(5);
+//		
+//	}
+	//}
 }
