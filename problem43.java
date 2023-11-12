@@ -23,5 +23,8 @@ public class problem43 extends GraphicsProgram{
 		oval.move(e.getX(), e.getY());
 		
 	}
+	 public void mouseReleased(MouseEvent e) {
+	        oval = null;
+	    }
 
 }
