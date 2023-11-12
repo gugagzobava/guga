@@ -14,7 +14,7 @@ public class problem44 extends GraphicsProgram {
 	 public void mouseClicked(MouseEvent e) {
 	        oval = new GOval(d, d);
 	        oval.setFilled(true);
-	        add(oval, e.getX(), e.getY());
+	        add(oval, e.getX() - d / 2, e.getY() - d / 2);
 	  //      moveOvalDown();
 	        
 	        }
