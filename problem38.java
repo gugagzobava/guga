@@ -15,6 +15,7 @@ public class problem38 extends ConsoleProgram {
 				int bid = readInt("Enter your bid: ");
 				if (bid < balance){
 					println("You don't have enough money");
+					break;
 				}
 				int x = rgen.nextInt(0, 36);
 				println("Roulette result is " + x);
