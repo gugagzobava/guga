@@ -15,6 +15,10 @@ public class problem44 extends GraphicsProgram {
 	        oval = new GOval(d, d);
 	        oval.setFilled(true);
 	        add(oval, e.getX(), e.getY());
+	        while(oval.getY() < getHeight()){
+	        	move(0, 1);
+	        	pause(5);
+	        }
 
 	 }
 }
