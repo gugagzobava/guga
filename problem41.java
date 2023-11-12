@@ -20,5 +20,8 @@ public class problem41 extends GraphicsProgram {
 		add(oval);
         
 	}
-
+	 public void mouseClicked(MouseEvent e) {
+	            removeAll(); // Clear the canvas
+	        
+	 }
 }
