@@ -33,7 +33,7 @@ public class problem43 extends GraphicsProgram{
             lastY = e.getY();
         }
     
-    }
+   
 //	private RandomGenerator rgen = RandomGenerator.getInstance();
 //	private GOval oval;
 //	public void run(){
