@@ -20,7 +20,7 @@ public class problem44 extends GraphicsProgram {
 	}
 
 	private void moveOvalDown() {
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 800; i++) {
 			oval.move(0, 1);
 			pause(100);
 
