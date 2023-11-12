@@ -26,8 +26,8 @@ public class problem43 extends GraphicsProgram{
     }
 
     public void mouseDragged(MouseEvent e) {
-            double dx = e.getX() - lastX;
-            double dy = e.getY() - lastY;
+            double dx = e.getX();
+            double dy = e.getY() ;
             oval.move(dx, dy);
             lastX = e.getX();
             lastY = e.getY();
