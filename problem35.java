@@ -6,12 +6,14 @@ public class problem35 extends ConsoleProgram {
 
 	public void run() {
 		int flips = 0;
-		int result = rgen.nextInt(0, 1);
-		flips++;
-		if (result == 1) {
-			println("heads");
-		} else {
-			println("tails");
+		while (true) {
+			int result = rgen.nextInt(0, 1);
+			flips++;
+			if (result == 1) {
+				println("heads");
+			} else {
+				println("tails");
+			}
 		}
 	}
 
