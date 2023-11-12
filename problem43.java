@@ -6,18 +6,20 @@ import acm.util.RandomGenerator;
 
 public class problem43 extends GraphicsProgram{
 	private RandomGenerator rgen = RandomGenerator.getInstance();
+	private GOval oval;
 	public void run(){
 		addMouseListeners();
-		
-	}
-	public void mouseDragged(MouseEvent e){
 		double d = rgen.nextDouble(0, 100);
-		GOval oval = new GOval(d, d);
+		oval = new GOval(d, d);
 		oval.setFilled(true);
 		oval.setColor(rgen.nextColor());
 		double x = rgen.nextDouble(0, getWidth() - d);
 		double y = rgen.nextDouble(0, getHeight() - d);
 		add(oval, x, y);
+		
+	}
+	public void mouseDragged(MouseEvent e){
+		
 		oval.move(e.getX(), e.getY());
 		
 	}
