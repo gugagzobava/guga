@@ -5,15 +5,16 @@ public class problem37 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 
 	public void run() {
-		int n = readInt("Place your bid: ");
-		int x = rgen.nextInt(0, 36);
-		println("Roulette result is " +x);
-		if (n == x) {
-			println("you win");
-		} else {
-			println("you lost");
+		while (true) {
+			int n = readInt("Place your bid: ");
+			int x = rgen.nextInt(0, 36);
+			println("Roulette result is " + x);
+			if (n == x) {
+				println("you win");
+			} else {
+				println("you lost");
+			}
 		}
-
 	}
 
 }
