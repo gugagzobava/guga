@@ -8,7 +8,7 @@ public class problem34 extends GraphicsProgram {
 
 	public void run() {
 		for (int i = 0; i < 1000; i++) {
-			int d = rgen.nextInt(100, 300);
+			double d = rgen.nextDouble(0, 100);
 			GOval oval = new GOval(d, d);
 			oval.setFilled(true);
 			oval.setColor(rgen.nextColor());
