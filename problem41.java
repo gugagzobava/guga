@@ -14,7 +14,7 @@ public class problem41 extends GraphicsProgram {
 	public void mouseMoved(MouseEvent e) {
 		double x = e.getX();
         double y = e.getY();
-    	GOval oval = new GOval (x, y, d , d);
+    	GOval oval = new GOval (x - d / 2, y - d / 2, d , d);
 		oval.setFilled(true);
 		oval.setColor(rgen.nextColor());
 		add(oval);
