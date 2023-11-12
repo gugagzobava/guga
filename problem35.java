@@ -3,14 +3,16 @@ import acm.util.RandomGenerator;
 
 public class problem35 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
+
 	public void run() {
-		int result = rgen.nextInt(0,1);
+		int flips = 0;
+		int result = rgen.nextInt(0, 1);
+		flips++;
 		if (result == 1) {
 			println("heads");
-			} else {
-				println("tails");
+		} else {
+			println("tails");
 		}
 	}
-	
 
 }
