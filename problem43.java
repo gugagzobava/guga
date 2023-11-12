@@ -9,7 +9,7 @@ public class problem43 extends GraphicsProgram{
 	private GOval oval;
 	public void run(){
 		addMouseListeners();
-		double d = rgen.nextDouble(0, 100);
+		double d = rgen.nextDouble(50, 100);
 		oval = new GOval(d, d);
 		oval.setFilled(true);
 		oval.setColor(rgen.nextColor());
