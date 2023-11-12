@@ -29,7 +29,8 @@ public class problem43 extends GraphicsProgram{
             double dx = e.getX() - lastX;
             double dy = e.getY() - lastY;
             oval.move(dx, dy);
-           
+            lastX = e.getX();
+            lastY = e.getY();
         }
     
    
