@@ -22,6 +22,7 @@ public class problem38 extends ConsoleProgram {
 					println("you lost");
 					balance = balance - bid;
 				}
+				println("Your balance is " +balance);
 			}
 		}
 	}
