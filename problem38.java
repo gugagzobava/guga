@@ -13,7 +13,7 @@ public class problem38 extends ConsoleProgram {
 				println("Illegal number format ");
 			} else {
 				int bid = readInt("Enter your bid: ");
-				if (bid < balance){
+				if (bid > balance){
 					println("You don't have enough money");
 					break;
 				}
