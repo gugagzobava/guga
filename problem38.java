@@ -13,7 +13,7 @@ public class problem38 extends ConsoleProgram {
 				println("Illegal number format ");
 			} else {
 				int bid = readInt("Enter your bid: ");
-				int x = rgen.nextInt(0, 36);
+				int x = rgen.nextInt(0, 1);
 				println("Roulette result is " + x);
 				if (n == x) {
 					println("you win");
