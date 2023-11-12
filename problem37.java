@@ -7,6 +7,7 @@ public class problem37 extends ConsoleProgram {
 	public void run() {
 		int n = readInt("Place your bid: ");
 		int x = rgen.nextInt(0, 36);
+		println(x);
 		if (n == x) {
 			println("you win");
 		} else {
