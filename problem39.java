@@ -10,6 +10,9 @@ public class problem39 extends GraphicsProgram {
 		while(true){
 			ball.move(1, 0);
 			pause(10);
+			if(ball.getX() + 2 * r == getWidth()){
+				break;
+			}
 		}
 	}
 
