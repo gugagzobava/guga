@@ -8,7 +8,7 @@ public class problem38 extends ConsoleProgram {
 		int balance = 1000;
 		println("Your balance is " +balance);
 		while (true) {
-			int n = readInt("Place your bid to number: ");
+			int n = readInt("Choose number: ");
 			if (n > 36) {
 				println("Illegal number format ");
 			} else {
