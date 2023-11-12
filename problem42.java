@@ -11,16 +11,14 @@ public class problem42 extends GraphicsProgram {
 	}
 
 	public void mousePressed(MouseEvent e) {
-		GLine section = new GLine(e.getX(), e.getY(), e.getX(), e.getY());
+		section = new GLine(e.getX(), e.getY(), e.getX(), e.getY());
 		add(section);
 
 	}
 
 	public void mouseDragged(MouseEvent e) {
 		// Update the second vertex as the mouse is dragged
-		if (section != null) {
 		section.setEndPoint(e.getX(), e.getY());
-		}
 
 	}
 }
