@@ -24,7 +24,7 @@ public class problem41 extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		if (e.getClickCount() == 3) {
+		if (e.getClickCount() == 2) {
 			removeAll(); // Clear the canvas
 		}
 	}
