@@ -16,6 +16,7 @@ public class problem35 extends ConsoleProgram {
 				println("tails");
 			}
 		}
+		println("it took" + flips + "flips to get heads");
 	}
 
 }
