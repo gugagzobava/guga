@@ -21,7 +21,7 @@ public class problem44 extends GraphicsProgram {
 	    private void moveOvalDown() {
 	        while (oval.getY() < getHeight() - d) {
 	            oval.move(0, 1);
-	            pause(100);
+	            pause(10);
 	        }
 	    }
 //	private GOval oval;
