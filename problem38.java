@@ -11,7 +11,7 @@ public class problem38 extends ConsoleProgram {
 			int n = readInt("Choose number: ");
 			if (n > 36) {
 				println("Illegal number format ");
-			}
+			} else {
 				int bid = readInt("Enter your bid: ");
 				int x = rgen.nextInt(0, 36);
 				println("Roulette result is " + x);
@@ -27,3 +27,4 @@ public class problem38 extends ConsoleProgram {
 		}
 	}
 
+}
