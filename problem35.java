@@ -11,6 +11,7 @@ public class problem35 extends ConsoleProgram {
 			flips++;
 			if (result == 1) {
 				println("heads");
+				break;
 			} else {
 				println("tails");
 			}
