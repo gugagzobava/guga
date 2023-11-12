@@ -21,8 +21,7 @@ public class problem43 extends GraphicsProgram{
         oval.setColor(rgen.nextColor());
         add(oval, e.getX(), e.getY());
 
-        lastX = e.getX();
-        lastY = e.getY();
+        
     }
 
     public void mouseDragged(MouseEvent e) {
