@@ -8,7 +8,7 @@ public class problem42 extends GraphicsProgram{
 	public void run() {
 		addMouseListeners();
 	}
-	public void mouseDragged(MouseEvent e){
+	public void mousePressed(MouseEvent e){
 		 GLine section = new GLine(e.getX(), e.getY(), e.getX(), e.getY());
 	        add(section);
 		
