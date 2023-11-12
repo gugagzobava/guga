@@ -9,6 +9,7 @@ public class problem37 extends ConsoleProgram {
 			int n = readInt("Place your bid to number: ");
 			if (n > 36) {
 				println("Illegal number format ");
+				break;
 			}
 			int x = rgen.nextInt(0, 36);
 			println("Roulette result is " + x);
