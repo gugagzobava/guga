@@ -20,7 +20,8 @@ public class problem44 extends GraphicsProgram {
 	}
 
 	private void moveOvalDown() {
-		while (oval.getY() < getHeight()){
+		double i = oval.getY();
+		for (i = 0; i < getHeight() ; i++) {
 			oval.move(0, 1);
 			pause(100);
 
