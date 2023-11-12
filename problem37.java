@@ -6,7 +6,10 @@ public class problem37 extends ConsoleProgram {
 
 	public void run() {
 		while (true) {
-			int n = readInt("Place your bid: ");
+			int n = readInt("Place your bid to number: ");
+			if (n > 36) {
+				println("Illegal number format ");
+			}
 			int x = rgen.nextInt(0, 36);
 			println("Roulette result is " + x);
 			if (n == x) {
