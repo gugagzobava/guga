@@ -18,6 +18,7 @@ public class problem43 extends GraphicsProgram{
 		double x = rgen.nextDouble(0, getWidth() - d);
 		double y = rgen.nextDouble(0, getHeight() - d);
 		add(oval, x, y);
+		oval.move(e.getX(), e.getY());
 		
 	}
 
