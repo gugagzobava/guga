@@ -7,7 +7,7 @@ public class problem36 extends ConsoleProgram {
 	public void run() {
 		int flips = 0;
 		int headsInRow = 0;
-		while (true) {
+		while (headsInRow <= 3 ) {
 			int result = rgen.nextInt(0, 1);
 			flips++;
 			if (result == 1) {
