@@ -23,7 +23,7 @@ public class problem44 extends GraphicsProgram {
 		for (int i = 0; i < getHeight(); i++) {
 			oval.move(0, 1);
 			pause(5);
-
+repaint();
 		}
 	}
 }
