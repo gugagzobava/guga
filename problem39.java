@@ -7,6 +7,10 @@ public class problem39 extends GraphicsProgram {
 		GOval ball = new GOval (2 * r, 2 * r);
 		ball.setFilled(true);
 		add(ball, 0, getHeight() / 2 - r);
+		while(true){
+			ball.move(1, 0);
+			pause(10);
+		}
 	}
 
 }
