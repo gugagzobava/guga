@@ -26,17 +26,13 @@ public class problem43 extends GraphicsProgram{
     }
 
     public void mouseDragged(MouseEvent e) {
-        if (oval != null) {
             double dx = e.getX() - lastX;
             double dy = e.getY() - lastY;
             oval.move(dx, dy);
             lastX = e.getX();
             lastY = e.getY();
         }
-    }
-
-    public void mouseReleased(MouseEvent e) {
-        oval = null;
+    
     }
 //	private RandomGenerator rgen = RandomGenerator.getInstance();
 //	private GOval oval;
