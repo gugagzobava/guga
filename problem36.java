@@ -13,7 +13,6 @@ public class problem36 extends ConsoleProgram {
 			if (result == 1) {
 				println("heads");
 				headsInRow++;
-				break;
 			} else {
 				println("tails");
 				headsInRow = 0;
