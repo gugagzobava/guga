@@ -13,6 +13,9 @@ public class problem38 extends ConsoleProgram {
 				println("Illegal number format ");
 			} else {
 				int bid = readInt("Enter your bid: ");
+				if (bid < balance){
+					println("You don't have enough money");
+				}
 				int x = rgen.nextInt(0, 36);
 				println("Roulette result is " + x);
 				if (n == x) {
