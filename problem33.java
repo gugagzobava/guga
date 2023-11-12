@@ -1,19 +1,16 @@
-import java.util.Random;
-import acm.graphics.*;
-import acm.program.ConsoleProgram;
+import acm.graphics.GOval;
+import acm.program.GraphicsProgram;
+import acm.util.RandomGenerator;
 
+public class problem33 extends GraphicsProgram {
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 
-public class problem33 extends ConsoleProgram {
 	public void run() {
-		int r = new Random().nextInt(150) + 50;
-		GOval oval = new GOval (getWidth() / 2 - r, getHeight() / 2 - r, 2 * r, 2 * r);
+		GOval oval = new GOval(rgen.nextInt(1, 100), rgen.nextInt(1, 100));
 		oval.setFilled(true);
-		add(oval);
-		
-		
-		
-		
-		
+		oval.setColor(rgen.nextColor());
+		add(oval, 200, 200);
+
 	}
 
 }
