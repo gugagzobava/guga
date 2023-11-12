@@ -9,14 +9,14 @@ public class problem37 extends ConsoleProgram {
 			int n = readInt("Place your bid to number: ");
 			if (n > 36) {
 				println("Illegal number format ");
-				break;
-			}
-			int x = rgen.nextInt(0, 36);
-			println("Roulette result is " + x);
-			if (n == x) {
-				println("you win");
 			} else {
-				println("you lost");
+				int x = rgen.nextInt(0, 36);
+				println("Roulette result is " + x);
+				if (n == x) {
+					println("you win");
+				} else {
+					println("you lost");
+				}
 			}
 		}
 	}
