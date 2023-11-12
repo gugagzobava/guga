@@ -12,7 +12,7 @@ public class problem39 extends GraphicsProgram {
 		while (true) {
 			ball.move(dx, 0);
 			pause(5);
-			if (ball.getX() + 2 * r == getWidth()) {
+			if (ball.getX() == 0 || ball.getX() + 2 * r == getWidth()) {
 				dx = -dx;
 			}
 		}
