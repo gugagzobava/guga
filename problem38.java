@@ -5,9 +5,9 @@ public class problem38 extends ConsoleProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 
 	public void run() {
-		int balance = 1000;
-		println(balance);
 		while (true) {
+			int balance = 1000;
+			println(balance);
 			int n = readInt("Place your bid to number: ");
 			if (n > 36) {
 				println("Illegal number format ");
