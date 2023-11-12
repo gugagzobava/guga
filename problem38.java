@@ -7,7 +7,7 @@ public class problem38 extends ConsoleProgram {
 	public void run() {
 		while (true) {
 			int balance = 1000;
-			println(balance);
+			println("Your balance is " +balance);
 			int n = readInt("Place your bid to number: ");
 			if (n > 36) {
 				println("Illegal number format ");
