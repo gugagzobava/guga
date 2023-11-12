@@ -2,20 +2,20 @@ import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 
 public class problem40 extends GraphicsProgram {
+	private static final int r = 25;
+
 	public void run() {
-		GOval ball = new GOval(100, 100);
-		add(ball, 0, getHeight() / 2 - 50);
-		double dx = 1;
+		GOval ball = new GOval(2 * r, 2 * r);
+		ball.setFilled(true);
+		add(ball, 0, getHeight() / 2 - r);
+		int dx = 1;
 		while (true) {
 			ball.move(dx, 0);
-			if (ball.getX() <= 0 || ball.getX() + ball.getWidth() / 2 >= getWidth()) {
+			pause(5);
+			if (ball.getX() == 0 || ball.getX() + 2 * r == getWidth()) {
 				dx = -dx;
 			}
-
-			pause(5);
-
 		}
-
 	}
 
 }
