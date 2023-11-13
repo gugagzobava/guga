@@ -10,9 +10,6 @@ public class problem44 extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
 
-		while (oval.getY() < getHeight() - d) {
-
-		}
 	}
 
 	public void mouseClicked(MouseEvent e) {
