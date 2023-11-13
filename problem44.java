@@ -18,13 +18,10 @@ public class problem44 extends GraphicsProgram {
 		        oval.setFilled(true);
 		        add(oval, e.getX() - d / 2, e.getY() - d / 2);
 
-		        // Move the ball until it reaches the bottom
-		        while (oval.getY() < getHeight() - d) {
-		            oval.move(0, 1);
-		            pause(10);
+		        oval.setLocation(e.getX() - d / 2, e.getY() - d / );
 		        }
 		    }
-		}
+		
 		
 
 //		oval = new GOval(d, d);
