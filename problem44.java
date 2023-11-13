@@ -18,7 +18,7 @@ public class problem44 extends GraphicsProgram {
 		        oval.setFilled(true);
 		        add(oval, e.getX() - d / 2, e.getY() - d / 2);
 
-		        oval.setLocation(e.getX() - d / 2, e.getY() - d / );
+		        oval.setLocation(e.getX() - d / 2, e.getY() - d / 2);
 		        }
 		    }
 		
