@@ -17,6 +17,10 @@ public class problem44 extends GraphicsProgram {
 		        oval = new GOval(d, d);
 		        oval.setFilled(true);
 		        add(oval, e.getX() - d / 2, e.getY() - d / 2);
+		        for (int i = 0; i < getHeight() - e.getY(); i += 5) {
+		            oval.move(0, 5);
+		            pause(50); // Adjust the pause time to control the falling speed
+		        }
 
 		       
 		        }
