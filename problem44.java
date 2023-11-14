@@ -9,9 +9,9 @@ public class problem44 extends GraphicsProgram {
 
 	public void run() {
 		addMouseListeners();
-		while(true){
-		oval.move(0, 1);
-		pause(10);
+		while (true) {
+			oval.move(0, 1);
+			pause(10);
 		}
 	}
 
