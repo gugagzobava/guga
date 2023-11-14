@@ -9,22 +9,18 @@ public class problem44 extends GraphicsProgram {
 
 	public void run() {
 		addMouseListeners();
-
+		while(true){
+		oval.move(0, 1);
+		pause(10);
+		}
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		 
-		        oval = new GOval(d, d);
-		        oval.setFilled(true);
-		        add(oval, e.getX() - d / 2, e.getY() - d / 2);
-		       
-		        }
 
-		       
-		        }
-		    
-		
-		
+		oval = new GOval(d, d);
+		oval.setFilled(true);
+		add(oval, e.getX() - d / 2, e.getY() - d / 2);
 
+	}
 
-	
+}
