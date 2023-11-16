@@ -12,7 +12,7 @@ public class problem45 extends ConsoleProgram {
 			}
 		}
 		
-		println("This symbol appears in the text " + numbOccurences + "times. ");
+		println("This symbol appears in the text " + numbOccurences + " times. ");
 	}
 
 }
