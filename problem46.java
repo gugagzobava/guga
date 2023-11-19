@@ -3,25 +3,48 @@ import acm.program.ConsoleProgram;
 public class problem46 extends ConsoleProgram {
 	public void run() {
 		String text = readLine("Enter text: ");
-		int maxCount = 0;
-		char maxChar;
-		for (int i = 0; i < text.length(); i++) {
-			int numOcc = numOccurences(text, text.charAt(i));
-			if (numOcc > maxCount){
-				maxCount = numOcc;
-				maxChar = text.charAt(i);
-			}
-		}
-		println("max char: " + maxChar);
-	}
+        int maxCount = 0;
+        char maxChar = '\0'; // Initialize maxChar to some default value
+        for (int i = 0; i < text.length(); i++) {
+            int numOcc = numOccurrences(text, text.charAt(i));
+            if (numOcc > maxCount) {
+                maxCount = numOcc;
+                maxChar = text.charAt(i);
+            }
+        }
+        println("max char: " + maxChar);
+    }
 
-	private int numOccurences(String text, char symbol) {
-		int numOccurences = 0;
-		for (int i = 0; i < text.length(); i++) {
-			if (text.charAt(i) == symbol) {
-				numOccurences++;
-			}
-		}
-		return numOccurences;
-	}
+    private int numOccurrences(String text, char symbol) {
+        int numOccurrences = 0;
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == symbol) {
+                numOccurrences++;
+            }
+        }
+        return numOccurrences;
+    }
+	
+//		String text = readLine("Enter text: ");
+//		int maxCount = 0;
+//		char maxChar;
+//		for (int i = 0; i < text.length(); i++) {
+//			int numOcc = numOccurences(text, text.charAt(i));
+//			if (numOcc > maxCount){
+//				maxCount = numOcc;
+//				maxChar = text.charAt(i);
+//			}
+//		}
+//		println("max char: " + maxChar);
+//	}
+//
+//	private int numOccurences(String text, char symbol) {
+//		int numOccurences = 0;
+//		for (int i = 0; i < text.length(); i++) {
+//			if (text.charAt(i) == symbol) {
+//				numOccurences++;
+//			}
+//		}
+//		return numOccurences;
+//	}
 }
