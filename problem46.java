@@ -2,29 +2,34 @@ import acm.program.ConsoleProgram;
 
 public class problem46 extends ConsoleProgram {
 	public void run() {
-		String text = readLine("Enter text: ");
-        int maxCount = 0;
-        char maxChar = '\0'; // Initialize maxChar to some default value
-        for (int i = 0; i < text.length(); i++) {
-            int numOcc = numOccurrences(text, text.charAt(i));
-            if (numOcc > maxCount) {
-                maxCount = numOcc;
-                maxChar = text.charAt(i);
-            }
-        }
-        println("max char: " + maxChar);
-    }
+		String s = readLine("Enter string: ");
+		println(findMostFrequentLetter(s));
+	}
 
-    private int numOccurrences(String text, char symbol) {
-        int numOccurrences = 0;
-        for (int i = 0; i < text.length(); i++) {
-            if (text.charAt(i) == symbol) {
-                numOccurrences++;
-            }
-        }
-        return numOccurrences;
-    }
+	private char findMostFrequentLetter(String s) {
+		char result = '-';
+		int max = 0;
+		for(int i = 0; i < 26; i++){
+			char next = (char)('a' + i);
+			int countSymbol = countSymbolInString(s, next);
+			if(countSymbol > max){
+				max = countSymbol;
+				result = next;
+			}
+		}
+		return result;
+	}
 	
+	private int countSymbolInString(String s, char ch) {
+		int count = 0;
+		for (int i = 0; i < s.length(); i++) {
+			int current = s.charAt(i);
+			if (current == ch) {
+				count++;
+			}
+		}
+		return count;
+	}
 //		String text = readLine("Enter text: ");
 //		int maxCount = 0;
 //		char maxChar;
