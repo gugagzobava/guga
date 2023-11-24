@@ -4,6 +4,8 @@ public class deletecracters extends ConsoleProgram {
 	public void run(){
 		String s = readLine();
 		println(deleteCharacters(s));
+		String a = "hello";
+		String b = "hell";
 	}
 	private String deleteCharacters(String string) {
 		String result = "";
