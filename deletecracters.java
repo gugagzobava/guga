@@ -5,7 +5,7 @@ public class deletecracters extends ConsoleProgram {
 
 		String a = "heeeeooolll";
 		String b = "hello";
-		if (a.contains(b)) {
+		if (contains(a, b)) {
 			println("true");
 
 		} else {
