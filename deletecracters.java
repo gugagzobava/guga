@@ -2,10 +2,15 @@ import acm.program.ConsoleProgram;
 
 public class deletecracters extends ConsoleProgram {
 	public void run() {
-		
 
 		String a = "gghhooooeeepploll";
 		String b = "hello";
+		if (a.contains(b)) {
+			println("true");
+
+		} else {
+			println("false");
+		}
 	}
 
 	private boolean contains(String a, String b) {
@@ -15,8 +20,8 @@ public class deletecracters extends ConsoleProgram {
 			if (prevIndex == 0) {
 				return false;
 			}
-			return true;
 
 		}
+		return true;
 	}
 }
