@@ -3,6 +3,7 @@ import acm.program.ConsoleProgram;
 public class deletecracters extends ConsoleProgram {
 	public void run(){
 		String s = readLine();
+		println(deleteCharacters(s));
 	}
 	private String deleteCharacters(String string) {
 		String result = "";
