@@ -1,4 +1,18 @@
+import acm.program.ConsoleProgram;
 
-public class deletecracters {
+public class deletecracters extends ConsoleProgram {
+	public void run(){
+		String s = readLine();
+	}
+	private String deleteCharacters(String string) {
+		String result = "";
+		for (int i = 0; i < string.length(); i++) {
+			if (i == 0 || string.charAt(i) != string.charAt(i-1)){
+				result += string.charAt(i);
+			}
+		}
+	
+		return result;
+	}
 
 }
