@@ -19,6 +19,9 @@ public class problem48 extends ConsoleProgram{
 		for(int i = 0; i < s.length(); i++){
 			if(s.charAt(i) == ch){
 				count++;
+				if(count == 0){
+					break;
+				}
 			}
 		}
 		return count;
