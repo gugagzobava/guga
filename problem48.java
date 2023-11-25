@@ -14,10 +14,10 @@ public class problem48 extends ConsoleProgram{
 		}
 		
 	}
-	private int countSymbol(String s, char ch){
+	private int countSymbol(String s, char next){
 		int count = 0;
 		for(int i = 0; i < s.length(); i++){
-			if(s.charAt(i) == ch){
+			if(s.charAt(i) == next){
 				count++;
 			}
 		}
