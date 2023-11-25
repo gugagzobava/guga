@@ -9,8 +9,8 @@ public class problem48 extends ConsoleProgram{
 	private void printSymbolStatistics(String s) {
 		for(int i = 0; i < 26; i++) {
 			char next = (char) ('a' + i);
-			countSymbol(s, next);
-			println("Symbol '" + next + "' occurs " + countSymbol + " times.");
+			int N = countSymbol(s, next);
+			println("Symbol '" + next + "' occurs " + N + " times.");
 		}
 		
 	}
