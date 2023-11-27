@@ -22,7 +22,7 @@ public class midterm2019_cimcima extends GraphicsProgram{
 		ball.setFilled(true);
 		ball.setColor(rgen.nextColor());
 		int x = rgen.nextInt(1,5);
-		while(ball.getColor() != Color.GREEN){
+		while(true){
 	
 			if (x == 1){
 				ball.setColor(Color.BLACK);
@@ -39,6 +39,7 @@ public class midterm2019_cimcima extends GraphicsProgram{
 			if(x == 5){
 				ball.setColor(Color.GREEN);
 				break;
+				
 			}
 		}
 	}
