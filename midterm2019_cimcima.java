@@ -21,7 +21,9 @@ public class midterm2019_cimcima extends GraphicsProgram {
 					clickedObject.setColor(color);
 					pause(1000);
 				}
+				clickedObject = null;
 			}
+			pause(100);
 		}
 	}
 
