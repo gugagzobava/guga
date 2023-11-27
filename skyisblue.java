@@ -7,8 +7,7 @@ public class skyisblue extends ConsoleProgram{
 	      String str = "the sky is blue";
 	        StringTokenizer tokenizer = new StringTokenizer(str, " ");
 	        while (tokenizer.hasMoreTokens()) {
-	            String token = tokenizer.nextToken();
-	            print(token + " ");
+	        	print(tokenizer.nextToken() + " ");
 	        }
 	        println();
 	    }
