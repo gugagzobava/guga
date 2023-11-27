@@ -14,6 +14,9 @@ public class midterm2019_cimcima extends GraphicsProgram{
 		
 	}
 	public void mouseClicked(MouseEvent e){
+		if (ball != null){
+			remove(ball);
+		}
 		ball = new GOval(e.getX() - d / 2, e.getY() - d / 2, d, d);
 		add(ball);
 		ball.setFilled(true);
