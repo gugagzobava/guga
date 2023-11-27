@@ -21,7 +21,7 @@ public class midterm2021_3_texili extends GraphicsProgram {
 
 	}
 	public void mouseDragged(MouseEvent e) {
-		
+		line.setEndPoint(e.getX(), e.getY());
 		lastPoint = new GPoint(e.getX(), e.getY());
 
 	}
