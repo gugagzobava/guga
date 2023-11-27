@@ -19,6 +19,7 @@ public class problem51 extends ConsoleProgram{
                      }
                 }
             }
+        println(result);
            
         }
        
