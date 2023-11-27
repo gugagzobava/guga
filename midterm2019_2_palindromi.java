@@ -9,6 +9,7 @@ public class midterm2019_2_palindromi extends ConsoleProgram {
 			n /= 10;
 			result = result * 10 + m;
 		}
+		println(result);
 	}
 	
 
