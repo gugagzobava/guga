@@ -10,6 +10,7 @@ public class skyisblue extends ConsoleProgram{
             String token = tokenizer.nextToken();
             print(token + " ");
         }
+		println();
 	}
 	}
 
