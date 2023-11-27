@@ -5,10 +5,12 @@ public class midterm2021_1_log extends ConsoleProgram {
 		int n = readInt("enter base: ");
 		int m = readInt("enter argument: ");
 		int result = m / n;
+		int answer = 1;
 		if(m / n != 1){
 			result = result / n;
+			answer++;
 		}
-		println("log(" + n + " ," + m + ") = " + result);
+		println("log(" + n + " ," + m + ") = " + answer);
 	}
 
 }
