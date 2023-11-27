@@ -10,13 +10,14 @@ public class midterm2019_2_palindromi extends ConsoleProgram {
 	}
 
 	private boolean ispalindrom(int n) {
+		int number = n;
 		int result = 0;
 		while(n != 0){
 			int m = n % 10;
 			n /= 10;
 			result = result * 10 + m;
 		}
-		if (n == result){
+		if (number == result){
 			return true;
 		} else{
 			return false;
