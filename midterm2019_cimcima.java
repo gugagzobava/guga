@@ -27,40 +27,34 @@ public class midterm2019_cimcima extends GraphicsProgram {
 
 	public void mouseClicked(MouseEvent e) {
 		GObject object = getElementAt(e.getX(), e.getY());
-		if(object == null){
-		ball = new GOval(e.getX() - d / 2, e.getY() - d / 2, d, d);
-		add(ball);
-		ball.setFilled(true);
-		ball.setColor(flicking());
-		
+		if (object == null) {
+			ball = new GOval(e.getX() - d / 2, e.getY() - d / 2, d, d);
+			add(ball);
+			ball.setFilled(true);
+			ball.setColor(flicking());
+
 		} else {
 			clickedObject = object;
 		}
-		
 
 	}
 
 	private Color flicking() {
 		int x = rgen.nextInt(5);
-		if (x == 1) {
-			ball.setColor(Color.BLACK);
+		if (x == 0) {
+			return Color.GREEN;
 		}
 		if (x == 2) {
-			ball.setColor(Color.RED);
+			return Color.RED;
 		}
 		if (x == 3) {
-			ball.setColor(Color.BLUE);
+			return Color.YELLOW;
 		}
 		if (x == 4) {
-			ball.setColor(Color.YELLOW);
+			return Color.BLACK;
 		}
-		if (x == 5) {
-			ball.setColor(Color.GREEN);
-		}
-	
-	
-		return null;
+
+		return Color.BLUE;
 	}
 
-		
 }
