@@ -22,24 +22,24 @@ public class midterm2019_cimcima extends GraphicsProgram{
 		ball.setFilled(true);
 		ball.setColor(rgen.nextColor());
 		int x = rgen.nextInt(1,5);
-		while(true){
-	
-			if (x == 1){
-				ball.setColor(Color.BLACK);
-			}
-			if(x == 2){
-				ball.setColor(Color.RED);
-			}
-			if(x == 3){
-				ball.setColor(Color.BLUE);
-			}
-			if(x == 4){
-				ball.setColor(Color.YELLOW);
-			}
-			if(x == 5){
-				ball.setColor(Color.GREEN);
-				break;
-				
+//		while(true){
+//	
+//			if (x == 1){
+//				ball.setColor(Color.BLACK);
+//			}
+//			if(x == 2){
+//				ball.setColor(Color.RED);
+//			}
+//			if(x == 3){
+//				ball.setColor(Color.BLUE);
+//			}
+//			if(x == 4){
+//				ball.setColor(Color.YELLOW);
+//			}
+//			if(x == 5){
+//				ball.setColor(Color.GREEN);
+//				break;
+//				
 			}
 		}
 	}
