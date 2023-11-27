@@ -40,8 +40,8 @@ public class midterm2019_cimcima extends GraphicsProgram{
 //				ball.setColor(Color.GREEN);
 //				break;
 //				
-			}
-		}
+//			}
+//		}
 	}
 
 }
