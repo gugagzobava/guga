@@ -38,7 +38,7 @@ public class midterm2019_cimcima extends GraphicsProgram{
 			}
 			if(x == 5){
 				ball.setColor(Color.GREEN);
-				break;
+				
 				
 			}
 	//	}
