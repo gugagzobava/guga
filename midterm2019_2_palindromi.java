@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class midterm2019_2_palindromi extends ConsoleProgram {
 
 	public void run(){
-		int n = readInt("enter number: ");
+		int n = 121;
 		ispalindrom(n);
 		
 		
