@@ -5,42 +5,45 @@ import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
 
-public class midterm2019_cimcima extends GraphicsProgram{
+public class midterm2019_cimcima extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private static final int d = 50;
 	private GOval ball;
-	public void run(){
+
+	public void run() {
 		addMouseListeners();
-		
+
 	}
-	public void mouseClicked(MouseEvent e){
-		if (ball != null){
+
+	public void mouseClicked(MouseEvent e) {
+		if (ball != null) {
 			remove(ball);
 		}
 		ball = new GOval(e.getX() - d / 2, e.getY() - d / 2, d, d);
 		add(ball);
 		ball.setFilled(true);
 		ball.setColor(rgen.nextColor());
-		//int x = rgen.nextInt(1,5);
-		while(true){
-			int x = rgen.nextInt(1,5);
-			if (x == 1){
+		// int x = rgen.nextInt(1,5);
+		while (true) {
+			int x = rgen.nextInt(1, 5);
+			if (x == 1) {
 				ball.setColor(Color.BLACK);
 			}
-			if(x == 2){
+			if (x == 2) {
 				ball.setColor(Color.RED);
 			}
-			if(x == 3){
+			if (x == 3) {
 				ball.setColor(Color.BLUE);
 			}
-			if(x == 4){
+			if (x == 4) {
 				ball.setColor(Color.YELLOW);
 			}
-			if(x == 5){
+			if (x == 5) {
 				ball.setColor(Color.GREEN);
-			
-			}
-	pause(1000);
-	}
 
+			}
+			pause(1000);
+		}
+
+	}
 }
