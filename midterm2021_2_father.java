@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class midterm2021_2_father extends ConsoleProgram{
 	public void run(){
 		String Luke = "ATTGATTT";
-		String Anakin = "TGATT";
+		String Anakin = "TGA";
 		println(amIYourFatherLuke(Luke, Anakin));
 	}
 
