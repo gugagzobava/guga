@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class deletecracters extends ConsoleProgram {
 	public void run() {
 
-		String a = "heeeeooolll";
+		String a = "heeeelllllooo";
 		String b = "hello";
 		if (contains(a, b)) {
 			println("true");
