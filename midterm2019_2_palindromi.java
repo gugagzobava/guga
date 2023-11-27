@@ -1,15 +1,15 @@
 import acm.program.ConsoleProgram;
 
 public class midterm2019_2_palindromi extends ConsoleProgram {
-	private int n;
+
 	public void run(){
-		n = readInt("enter number: ");
-		ispalindrom();
+		int n = readInt("enter number: ");
+		ispalindrom(n);
 		
 		
 	}
 
-	private boolean ispalindrom() {
+	private boolean ispalindrom(int n) {
 		int result = 0;
 		while(n != 0){
 			int m = n % 10;
