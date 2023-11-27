@@ -41,21 +41,21 @@ public class midterm2019_cimcima extends GraphicsProgram {
 
 	private Color flicking() {
 		int x = rgen.nextInt(5);
-		if (x == 0) {
+		if (x == 0) 
 			return Color.GREEN;
-		}
-		if (x == 1) {
+		
+		if (x == 1) 
 			return Color.RED;
-		}
-		if (x == 2) {
+		
+		if (x == 2) 
 			return Color.YELLOW;
-		}
-		if (x == 3) {
+		
+		if (x == 3) 
 			return Color.BLACK;
-		}
-		if(x==4 ){
+		
+		
 		return Color.BLUE;
-		}
+		
 	}
 
 }
