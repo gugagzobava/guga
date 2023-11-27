@@ -23,7 +23,12 @@ public class midterm2019_cimcima extends GraphicsProgram {
 		add(ball);
 		ball.setFilled(true);
 		ball.setColor(rgen.nextColor());
+		flicker();
 		
+		
+	}
+
+	private void flicker() {
 		while (true) {
 			int x = rgen.nextInt(1, 6);
 			if (x == 1) {
