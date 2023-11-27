@@ -8,7 +8,7 @@ import acm.util.RandomGenerator;
 
 public class midterm2019_cimcima extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	private static final int d = 50;
+	private static final int d = 100;
 	private GOval ball;
 	private GObject clickedObject = null;
 
