@@ -16,7 +16,6 @@ public class midterm2019_cimcima extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		while(true){
 		if (ball != null) {
 			remove(ball);
 		}
@@ -25,7 +24,7 @@ public class midterm2019_cimcima extends GraphicsProgram {
 		ball.setFilled(true);
 		ball.setColor(rgen.nextColor());
 		// int x = rgen.nextInt(1,5);
-	
+		//while (true) {
 			int x = rgen.nextInt(1, 5);
 			if (x == 1) {
 				ball.setColor(Color.BLACK);
@@ -46,5 +45,5 @@ public class midterm2019_cimcima extends GraphicsProgram {
 			pause(1000);
 		}
 
-	}
+	//}
 }
