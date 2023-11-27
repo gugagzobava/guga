@@ -6,10 +6,13 @@ public class skyisblue extends ConsoleProgram{
 	public void run(){
 	      String str = "the sky is blue";
 	        StringTokenizer tokenizer = new StringTokenizer(str, " ");
+	        String reversedString = "";
 	        while (tokenizer.hasMoreTokens()) {
-	        	print(tokenizer.nextToken() + " ");
+	            reversedString = tokenizer.nextToken() + " " + reversedString;
 	        }
-	        println();
+
+	        // Print the reversed string
+	        println(reversedString);
 	    }
 	}
 //		String str = "the sky is blue";
