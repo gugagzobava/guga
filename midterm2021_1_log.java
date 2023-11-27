@@ -6,13 +6,9 @@ public class midterm2021_1_log extends ConsoleProgram {
 		int m = readInt("enter argument: ");
 		int result = m / n;
 		int answer = 1;
-		while(true){
-		if(m / n != 1){
+		if(result != 1){
 			result = result / n;
 			answer++;
-		} else{
-			break;
-		}
 		}
 		println("log(" + n + " ," + m + ") = " + answer);
 	}
