@@ -7,7 +7,7 @@ public class midterm_practice_3 extends ConsoleProgram {
 	}
 
 	private String upperLower(String s) {
-		String result = " ";
+		String result = "";
 		for(int i = 0; i < s.length(); i++){
 			char currentChar = s.charAt(i);
 			if(currentChar == ' '){
