@@ -7,7 +7,7 @@ public class midterm_practice_2 extends ConsoleProgram{
 	}
 
 	private boolean isIncreasing(String s) {
-		for(int i = 0; i < s.length(); i++){
+		for(int i = 0; i < s.length() - 1; i++){
 			if(s.charAt(i) > s.charAt(i + 1)){
 				return false;
 			}
