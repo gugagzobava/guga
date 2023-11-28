@@ -10,7 +10,7 @@ public class midterm_practice_2 extends ConsoleProgram{
 
 	private void check(String s) {
 		for(int i = 0; i < s.length(); i++){
-			if(s.charAt(i) > 'Z' && s.charAt(i) < 'A'){
+			if(s.charAt(i) > 'Z' || s.charAt(i) < 'A'){
 				println("error");
 			
 			}
