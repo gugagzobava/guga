@@ -15,7 +15,9 @@ public class midterm_practice_2 extends ConsoleProgram{
 			if(s.charAt(i) > 'A' && s.charAt(i) < 'Z'){
 				b = c;
 				c = s.charAt(i);
-				if(b>=c)return false;
+				if(b>=c){
+					return false;
+				}
 				
 			}
 		
