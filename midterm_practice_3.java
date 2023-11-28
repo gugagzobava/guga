@@ -1,3 +1,5 @@
+import java.util.StringTokenizer;
+
 import acm.program.ConsoleProgram;
 
 public class midterm_practice_3 extends ConsoleProgram {
@@ -7,17 +9,25 @@ public class midterm_practice_3 extends ConsoleProgram {
 	}
 
 	private String upperLower(String s) {
-	//	String result = "";
-		for(int i = 0; i < s.length(); i++){
-			char currentChar = s.charAt(i);
-			if(currentChar == ' '){
-                s = s.substring(0, i) + Character.toUpperCase(currentChar) + s.substring(i + 1);
+		String result = "";
+		StringTokenizer tokenizer = new StringTokenizer(s);
 
-				//Character.toUpperCase(s.charAt(i+1));
-			}
+        while (tokenizer.hasMoreTokens()) {
+            String word = tokenizer.nextToken();
+            char firstChar = Character.toUpperCase(word.charAt(0));
+            String restOfWord = word.substring(1).toLowerCase();
+
+            result += firstChar + restOfWord;
+        }
+	
+//		for(int i = 0; i < s.length(); i++){
+//			char currentChar = s.charAt(i);
+//			if(currentChar == ' '){
+//				Character.toUpperCase(s.charAt(i+1));
+//			}
 //			result += currentChar;
-		}
-		return s;
+//		}
+		return result;
 	}
 
 }
