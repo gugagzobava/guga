@@ -7,15 +7,17 @@ public class midterm_practice_3 extends ConsoleProgram {
 	}
 
 	private String upperLower(String s) {
-		String result = "";
+	//	String result = "";
 		for(int i = 0; i < s.length(); i++){
 			char currentChar = s.charAt(i);
 			if(currentChar == ' '){
-				Character.toUpperCase(s.charAt(i+1));
+                s = s.substring(0, i) + Character.toUpperCase(currentChar) + s.substring(i + 1);
+
+				//Character.toUpperCase(s.charAt(i+1));
 			}
-			result += currentChar;
+//			result += currentChar;
 		}
-		return result;
+		return s;
 	}
 
 }
