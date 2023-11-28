@@ -11,8 +11,7 @@ public class midterm_practice_3 extends ConsoleProgram {
 		for(int i = 0; i < s.length(); i++){
 			char currentChar = s.charAt(i);
 			if(currentChar == ' '){
-				String x = ("" +s.charAt(i+1));
-				x = x.toUpperCase();
+				Character.toUpperCase(s.charAt(i+1));
 			}
 			result += currentChar;
 		}
