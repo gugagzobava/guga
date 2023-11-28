@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class midterm_practice_2 extends ConsoleProgram {
 	public void run() {
 		String s = readLine();
-\
+
 		s = s.toUpperCase();
 		println(isIncreasing(s));
 	}
