@@ -17,9 +17,9 @@ public class midterm_practice_3 extends ConsoleProgram {
             char firstChar = Character.toUpperCase(word.charAt(0));
             String restOfWord = word.substring(1).toLowerCase();
 
-            result += firstChar + restOfWord;
+            result += firstChar + restOfWord + " ";
         }
-	
+	 
 //		for(int i = 0; i < s.length(); i++){
 //			char currentChar = s.charAt(i);
 //			if(currentChar == ' '){
