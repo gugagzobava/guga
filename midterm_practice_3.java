@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class midterm_practice_3 extends ConsoleProgram {
 	public void run(){
 		String s = readLine();
-		upperLower(s);
+		println(upperLower(s));
 	}
 
 	private String upperLower(String s) {
