@@ -15,7 +15,8 @@ public class midterm_practice_2 extends ConsoleProgram {
 		char lastChar = 'A';
 
 		for (int i = 0; i < s.length(); i++) {
-			char currentChar = s.charAt(i);
+			char currentChar = Character.toUpperCase(s.charAt(i));
+			//char currentChar = s.charAt(i);
 			if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z') {
 				if (currentChar <= lastChar) {
 					return false;
