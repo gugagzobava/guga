@@ -2,12 +2,14 @@ import acm.program.ConsoleProgram;
 
 public class midterm_practice_2 extends ConsoleProgram {
 	public void run() {
+		while(true){
 		String s = readLine();
 		if (containsSymbol(s)) {
 			println("Error: String contains symbols. Please enter only letters.");
 		} else {
 			s = s.toUpperCase();
 			println(isIncreasing(s));
+		}
 		}
 	}
 
@@ -38,5 +40,6 @@ public class midterm_practice_2 extends ConsoleProgram {
 		}
 		return false; // No symbols found
 	}
+	
 
 }
