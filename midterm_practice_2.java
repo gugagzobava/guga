@@ -11,11 +11,11 @@ public class midterm_practice_2 extends ConsoleProgram{
 	private void check(String s) {
 		for(int i = 0; i < s.length(); i++){
 			if(s.charAt(i) < 'Z' && s.charAt(i) > 'A'){
-				println(isIncreasing(s));
 			} else {
 				println("error!");
 			}
 		}
+		println(isIncreasing(s));
 	}
 
 	private boolean isIncreasing(String s) {
