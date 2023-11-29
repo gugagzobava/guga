@@ -12,8 +12,15 @@ public class midterm_practice_5 extends ConsoleProgram{
 
 	private boolean anagrams(String a, String b) {
 		a = a.toLowerCase();
-		b = b.toLowerCase();		
+		b = b.toLowerCase();
+		int difference = 0;
 		for(int i = 0; i < a.length(); i++){
+			if(a.charAt(i) != b.charAt(i)){
+				difference++;
+				if (difference > 1){
+					return false;
+				}
+			}
 			char current = a.charAt(i);
 			 if (Character.isLetter(current)) {
 	                int occurrencesA = countOccurrences(a, current);
