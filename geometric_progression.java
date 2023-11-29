@@ -18,13 +18,14 @@ public class geometric_progression extends ConsoleProgram {
 	                break;
 	            }
 
-	            if (b2 != b1 * q) {
-	                println("Not a geometric progression.");
-	                break;
-	            }
-
+	            
 			b1 = b2;
 			b2 = readInt("");
 		}
+		if (b2 != b1 * q) {
+            println("Not a geometric progression.");
+          //  break;
+        }
+
 	}
 }
