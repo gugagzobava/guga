@@ -2,8 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class geometric_progression extends ConsoleProgram {
 	public void run() {
-	
-	        int b1 = readInt("Enter the first term: ");
+		 int b1 = readInt("Enter the first term: ");
 
 	        if (b1 == -1) {
 	            println("At least two terms are required for a geometric progression.");
@@ -26,8 +25,7 @@ public class geometric_progression extends ConsoleProgram {
 
 	            b1 = b2;
 	            b2 = readInt("Enter the next term (-1 to stop): ");
-	        
-	    }
+	        }
 //		int b1 = readInt();
 //		if (b1 == -1) {
 //			
