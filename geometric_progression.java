@@ -16,7 +16,7 @@ public class geometric_progression extends ConsoleProgram {
 				break;
 			}
 		}
-		if (check = true){
+		if (check){
 			println("progresia");
 		} else {
 			println("ara");
