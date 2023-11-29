@@ -5,7 +5,7 @@ public class geometric_progression extends ConsoleProgram {
 
 		int b1 = readInt();
 		if (b1 == -1) {
-			println("progresia");
+			
 		}
 
 		int b2 = readInt();
