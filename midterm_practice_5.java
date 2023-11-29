@@ -26,7 +26,7 @@ public class midterm_practice_5 extends ConsoleProgram{
 	           
 	        
 
-	        checkAnagrams(a, b);
+	       return checkAnagrams(a, b);
 	    }
 
 	    private boolean checkAnagrams(String a, String b) {
