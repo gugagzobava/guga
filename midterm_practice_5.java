@@ -20,13 +20,13 @@ public class midterm_practice_5 extends ConsoleProgram{
 	                    return false;
 	                }
 	            }
-	        }
-
-	        if (difference <= 1) {
 	            return true;
 	        }
 
-	        return checkAnagrams(a, b);
+	           
+	        
+
+	        checkAnagrams(a, b);
 	    }
 
 	    private boolean checkAnagrams(String a, String b) {
