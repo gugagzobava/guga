@@ -13,10 +13,12 @@ public class geometric_progression extends ConsoleProgram {
 		int q = b2 / b1;
 
 		while (true) {
-			 if (b2 == -1 && q == b2 / b1 ) {
+			 if (b2 == -1) {
+				 if(q == b2 / b1){
 	                println("It is a geometric progression.");
 	                break;
 	            }
+			 }
 
 	            
 			b1 = b2;
