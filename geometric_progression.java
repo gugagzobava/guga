@@ -2,30 +2,33 @@ import acm.program.ConsoleProgram;
 
 public class geometric_progression extends ConsoleProgram {
 	public void run() {
-		 int b1 = readInt("Enter the first term: ");
+		int b1 = readInt("Enter the first term: ");
 
-	        if (b1 == -1) {
-	            println("At least two terms are required for a geometric progression.");
-	            return;
-	        }
+        if (b1 == -1) {
+            println("At least two terms are required for a geometric progression.");
+            return;
+        }
 
-	        int b2 = readInt("Enter the second term: ");
-	        int q = b2 / b1;
+        int b2 = readInt("Enter the second term: ");
+        int q = b2 / b1;
 
-	        while (true) {
-	            if (b2 == -1) {
-	                println("It is a geometric progression.");
-	                break;
-	            }
+        while (true) {
+            if (b2 == -1) {
+                println("It is a geometric progression.");
+                break;
+            }
 
-	            if (b2 != b1 * q) {
-	                println("Not a geometric progression.");
-	                break;
-	            }
+            if (b2 != b1 * q) {
+                println("Not a geometric progression.");
+                while (b2 != -1) {
+                    b2 = readInt("Enter the next term (-1 to stop): ");
+                }
+                break;
+            }
 
-	            b1 = b2;
-	            b2 = readInt("Enter the next term (-1 to stop): ");
-	        }
+            b1 = b2;
+            b2 = readInt("Enter the next term (-1 to stop): ");
+        }
 //		int b1 = readInt();
 //		if (b1 == -1) {
 //			
