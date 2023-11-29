@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class midterm_practice_5 extends ConsoleProgram{
 	public void run(){
-		String a = "mama spa";
+		String a = "mama asa";
 		String b = "mimaiam";
 		println(anagrams(a, b));
 		
@@ -19,8 +19,9 @@ public class midterm_practice_5 extends ConsoleProgram{
 				difference++;
 				if (difference > 1){
 					return false;
-				}
+				} else{
 				return true;
+				}
 			}
 			char current = a.charAt(i);
 			 if (Character.isLetter(current)) {
