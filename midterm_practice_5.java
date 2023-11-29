@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class midterm_practice_5 extends ConsoleProgram{
 	public void run(){
-		String a = "mama sia";
+		String a = "mama spa";
 		String b = "mimaiam";
 		println(anagrams(a, b));
 		
