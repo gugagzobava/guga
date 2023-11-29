@@ -20,12 +20,11 @@ public class geometric_progression extends ConsoleProgram {
 
 	            if (b2 != b1 * q) {
 	                println("Not a geometric progression.");
-	                break;
+	             //   break;
 	            }
 
 			b1 = b2;
 			b2 = readInt("");
 		}
-		println("It is a geometric progression.");
 	}
 }
