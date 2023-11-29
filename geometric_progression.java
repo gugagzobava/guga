@@ -10,11 +10,12 @@ public class geometric_progression extends ConsoleProgram {
 			b1 = b2;
 			b2 = readInt();
 			if(b2 != b1 * q){
+				if(b2 == -1){
+					break;
+				}
 				check = false;
 			}
-			if(b2 == -1){
-				break;
-			}
+			
 		}
 		if (check){
 			println("progresia");
