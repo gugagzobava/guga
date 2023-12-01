@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class partOfEachOther extends ConsoleProgram {
     public void run() {
-        String a = "mama";
+        String a = "maman";
         String b = "mimaiam";
         println(anagrams(a, b));
     }
