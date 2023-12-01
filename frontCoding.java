@@ -27,6 +27,6 @@ public class frontCoding extends ConsoleProgram {
 			}
 
 		}
-		return result;
+		return count + result;
 	}
 }
