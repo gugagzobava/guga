@@ -19,6 +19,7 @@ public class wordShrugg extends ConsoleProgram {
             count = 1;
 		}
 		}
+		println();
 	}
 
 }
