@@ -7,11 +7,13 @@ public class frontCoding extends ConsoleProgram {
 		int count = 0;
 		int counta = 0;
 		int countb = 0;
-		println(FrontCoding(a, b, count, counta, countb));
+		String remainingA = "";
+		String remainingB = "";
+		println(FrontCoding(a, b, count, counta, countb, remainingA, remainingB));
 
 	}
 
-	private String FrontCoding(String a, String b, int count, int counta, int countb) {
+	private String FrontCoding(String a, String b, int count, int counta, int countb, String remainingA, String remainingB) {
 		String result = "";
 		for (int i = 0; i < Math.min(a.length(), b.length()); i++) {
 			char currentA = a.charAt(i);
@@ -25,10 +27,10 @@ public class frontCoding extends ConsoleProgram {
 			}
 			counta = a.length() - count;
 			countb = b.length() - count;
-//			String remainingA = a.substring(count);
-//			String remainingB = b.substring(count);
+			remainingA = a.substring(count);
+			remainingB = b.substring(count);
 
 		}
-		return count + result + counta + countb;
+		return count + result + counta + remainingA + countb + remainingB;
 	}
 }
