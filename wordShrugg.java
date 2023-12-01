@@ -13,11 +13,11 @@ public class wordShrugg extends ConsoleProgram {
 			char current = s.charAt(i);
 			if (current == s.charAt(i - 1)) {
 				count++;
-			}
+			} else {
 			System.out.print(count);
 			System.out.print(current);
 			count = 1;
-			
+			}
 		}
 
 	}
