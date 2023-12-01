@@ -6,7 +6,7 @@ public class frontCoding extends ConsoleProgram {
 		String b = "millenia";
 		int count = 0;
 		int counta = 0;
-		println(FrontCoding(a, b, count));
+		println(FrontCoding(a, b, count, counta));
 
 	}
 
