@@ -14,7 +14,8 @@ public class biggestDivisor extends ConsoleProgram{
 				largestPrime = i;
 			}
 		}
-		return largestPrime;
+		return largestPrime
+				;
 	}
 
 	private boolean isPrime(int i) {
