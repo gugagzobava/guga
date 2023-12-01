@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class UnEvil extends ConsoleProgram {
 	public void run() {
-		String s = "how arxxe youuunn?";
+		String s = "how arxxe younn?";
 		println(unEvilText(s));
 
 	}
