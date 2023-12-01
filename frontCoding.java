@@ -4,17 +4,16 @@ public class frontCoding extends ConsoleProgram {
 	public void run() {
 		String a = "million";
 		String b = "millenia";
-		println(FrontCoding(a, b));
-
-	}
-
-	private String FrontCoding(String a, String b) {
-		return prefix(a, b);
-	}
-
-	private String prefix(String a, String b) {
-		String result = "";
 		int count = 0;
+		int counta = a.length() - count;
+		int countb = b.length() - count;
+		println(FrontCoding(a, b, count));
+
+	}
+
+	private String FrontCoding(String a, String b, int count) {
+		String result = "";
+		
 		for (int i = 0; i < Math.min(a.length(), b.length()); i++) {
 			char currentA = a.charAt(i);
 			char currentB = b.charAt(i);
