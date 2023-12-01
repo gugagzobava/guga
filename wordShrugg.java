@@ -9,7 +9,6 @@ public class wordShrugg extends ConsoleProgram {
 
 	private void longestRunCompression(String s) {
 		int count = 1;
-		String result = "";
 		for(int i = 0; i < s.length(); i++){
 			char current = s.charAt(i);
 			if(current == s.charAt(i+1)){
@@ -18,7 +17,6 @@ public class wordShrugg extends ConsoleProgram {
 			print(count);
             print(current);
 		}
-		println(result);
 	}
 
 }
