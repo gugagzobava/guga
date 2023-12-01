@@ -14,7 +14,7 @@ public class UnEvil extends ConsoleProgram {
 			boolean isDuplicate = false;
 			while (i < s.length() - 1 && current == s.charAt(i + 1)) {
 				isDuplicate = true;
-				
+				i++;
 			}
 			if (!isDuplicate) {
 				result += current;
