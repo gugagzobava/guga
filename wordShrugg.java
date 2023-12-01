@@ -16,6 +16,7 @@ public class wordShrugg extends ConsoleProgram {
 			}
 			print(count);
             print(current);
+            count = 1;
 		}
 	}
 
