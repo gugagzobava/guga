@@ -4,7 +4,7 @@ public class dogs extends ConsoleProgram{
 	private String name = "";
 	public void run (){
 		println("Welcome to grand opening of the new Freeuni dog park!");
-		while(!name.equals("")){
+		while(true){
 			name = readLine("What is your dog's name ?");
 			int size = readInt("How big is your dog? Enter a number; 1 - small, 2 - medium, 3 - large ");
 			int candy = 2 * size;
