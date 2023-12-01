@@ -25,7 +25,7 @@ public class grid extends GraphicsProgram {
 	}
 
 	private Color getRandomColor() {
-		int randomColor = rgen.nextInt(0, 1);
+		int randomColor = rgen.nextInt(0, 2);
 		if(randomColor == 0){
 			return Color.GREEN;
 		}
