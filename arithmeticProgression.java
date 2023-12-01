@@ -9,17 +9,14 @@ public class arithmeticProgression extends ConsoleProgram {
 			a1 = a2;
 			a2 = readInt();
 			if (a2 != a1 + d) {
-				if (a2 == -1) {
-					println("Arithmetic progression");
-					break;
-				}
-				if (a2 == -1) {
-					println("Not an arithmetic progression");
-					break;
-				}
-
+				println("Not an arithmetic progression");
+				break;
 			}
+			if (a2 == -1) {
+				println("Arithmetic progression");
+				break;
+			}
+
 		}
 	}
-
 }
