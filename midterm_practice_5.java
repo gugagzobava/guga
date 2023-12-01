@@ -13,7 +13,7 @@ public class midterm_practice_5 extends ConsoleProgram{
 	private boolean anagrams(String a, String b) {
 		a = a.toLowerCase();
 		b = b.toLowerCase();
-		int difference = 0;
+//		int difference = 0;
 		for(int i = 0; i < a.length(); i++){
 			char current = a.charAt(i);
 			 if (Character.isLetter(current)) {
