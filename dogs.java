@@ -7,7 +7,7 @@ public class dogs extends ConsoleProgram{
 		int candyCounter = 0;
 		println("Welcome to grand opening of the new Freeuni dog park!");
 		while(true){
-			String name = readLine("What is your dog's name ?");
+			String name = readLine("What is your dog's name ? ");
 			if(name.equals("")){
 				println("At the grand opening, there will be " + candyCounter + " dog treats.");
 				break;
