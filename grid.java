@@ -2,8 +2,8 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class grid extends GraphicsProgram {
-	private int NUM_ROWS = 5;
-	private int NUM_COLOMNS = 5;
+	private int NUM_ROWS = 8;
+	private int NUM_COLOMNS = 8;
 
 	public void run() {
 		double x = getWidth() / NUM_COLOMNS;
