@@ -9,7 +9,7 @@ public class UnEvil extends ConsoleProgram {
 
 	private String unEvilText(String s) {
 		String result = "";
-		int count = 0;
+		int count = 1;
 		for (int i = 0; i < s.length(); i++) {
 			char current = s.charAt(i);
 	//		boolean isDuplicate = false;
