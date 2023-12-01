@@ -6,11 +6,12 @@ public class frontCoding extends ConsoleProgram {
 		String b = "millenia";
 		int count = 0;
 		int counta = 0;
-		println(FrontCoding(a, b, count, counta));
+		int countb = 0;
+		println(FrontCoding(a, b, count, counta, countb));
 
 	}
 
-	private String FrontCoding(String a, String b, int count, int counta) {
+	private String FrontCoding(String a, String b, int count, int counta, int countb) {
 		String result = "";
 		for (int i = 0; i < Math.min(a.length(), b.length()); i++) {
 			char currentA = a.charAt(i);
@@ -22,12 +23,12 @@ public class frontCoding extends ConsoleProgram {
 			} else {
 				break;
 			}
-			int counta = a.length() - count;
-			int countb = b.length() - count;
-			String remainingA = a.substring(count);
-			String remainingB = b.substring(count);
+			counta = a.length() - count;
+			countb = b.length() - count;
+//			String remainingA = a.substring(count);
+//			String remainingB = b.substring(count);
 
 		}
-		return count + result + counta;
+		return count + result + counta + countb;
 	}
 }
