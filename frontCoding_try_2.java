@@ -27,6 +27,6 @@ public class frontCoding_try_2 extends ConsoleProgram {
         String remainingA = a.substring(count);
         String remainingB = b.substring(count);
 
-        return count + result + "*" + remainingA + "*" + remainingB;
+        return count + result + "*" + remainingA + remainingA.length() + remainingB + remainingB.length();
     }
 }
