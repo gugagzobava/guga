@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class biggestDivisor extends ConsoleProgram{
 	public void run(){
 		int n = readInt("enter a number: ");
-		largestPrimeDivisor(n);
+		println(largestPrimeDivisor(n));
 		
 	}
 
