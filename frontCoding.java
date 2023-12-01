@@ -4,12 +4,12 @@ public class frontCoding extends ConsoleProgram {
 	public void run() {
 		String a = "million";
 		String b = "millenia";
-		FrontCoding(a, b);
+		println(FrontCoding(a, b));
 
 	}
 
 	private String FrontCoding(String a, String b) {
-		prefix(a, b);
+		return prefix(a, b);
 	}
 
 	private String prefix(String a, String b) {
