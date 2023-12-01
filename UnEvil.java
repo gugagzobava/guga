@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class UnEvil extends ConsoleProgram {
 	public void run() {
-		String s = "how arxxe younn?";
+		String s = "how arxxe youuunn?";
 		println(unEvilText(s));
 
 	}
@@ -12,13 +12,13 @@ public class UnEvil extends ConsoleProgram {
 		int count = 0;
 		for (int i = 0; i < s.length(); i++) {
 			char current = s.charAt(i);
-			boolean isDuplicate = false;
+	//		boolean isDuplicate = false;
 			while (i < s.length() - 1 && current == s.charAt(i + 1)) {
-				isDuplicate = true;
+	//			isDuplicate = true;
 				i++;
 				count++;
 			}
-			if (!isDuplicate) {
+			if (count <= 2) {
 				result += current;
 			}
 
