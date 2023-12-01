@@ -14,7 +14,9 @@ public class UnEvil extends ConsoleProgram{
 			if(i < s.length() - 1 && current == s.charAt(i + 1)){
 				result = s.substring(0, i) + s.substring(i+2);
 				i++;
-			}
+			} else {
+                result += current; // Append the character if it's not a duplicate
+            }
 		}
 		return result;
 	}
