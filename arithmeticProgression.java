@@ -4,20 +4,22 @@ public class arithmeticProgression extends ConsoleProgram {
 	public void run() {
 		int a1 = readInt();
 		int a2 = readInt();
-		int d = a2 - a1;
+		int d = a2 - a1; 
+		boolean check = true;
 		while (a1 != -1) {
 			a1 = a2;
 			a2 = readInt();
-			if (a2 == -1) {
-				println("Arithmetic progression");
+			if (a2 != a1 + d ) {
+				if(a2 == -1){
 				break;
 			}
-
-			if (a2 != a1 + d && a2 == -1) {
-				println("Not an arithmetic progression");
-				break;
+				check = false;
 			}
-			
+		}
+		if(check){
+			println("Arithemtic progression");
+		} else {
+			println("Not an arithmetic progression");
 		}
 	}
 }
