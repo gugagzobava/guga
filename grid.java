@@ -16,8 +16,9 @@ public class grid extends GraphicsProgram {
 			for (int colomns = 0; colomns < NUM_COLOMNS; colomns++) {
 				GRect rect = new GRect(x, y);
 				Color color = getRandomColor();
-				rect.setFilled(true);
+				
 				rect.setColor(color);
+				rect.setFilled(true);
 				rect.setFillColor(color);
 				add(rect, colomns * x, rows * y);
 			
