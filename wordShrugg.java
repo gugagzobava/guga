@@ -19,7 +19,8 @@ public class wordShrugg extends ConsoleProgram {
 			count = 1;
 			}
 		}
-
+		 System.out.print(count);
+	        System.out.print(s.charAt(s.length() - 1));
 	}
 
 }
