@@ -2,8 +2,8 @@ import acm.program.ConsoleProgram;
 
 public class frontCoding_try_2 extends ConsoleProgram {
     public void run() {
-        String a = "million";
-        String b = "millenia";
+        String a = "mum";
+        String b = "muma";
         String result = frontCoding(a, b);
         println(result);
     }
