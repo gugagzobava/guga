@@ -13,7 +13,7 @@ public class arithmeticProgression extends ConsoleProgram {
 				break;
 			}
 
-			if (a2 != a1 + d) {
+			if (a2 != a1 + d && a2 == -1) {
 				println("Not an arithmetic progression");
 				break;
 			}
