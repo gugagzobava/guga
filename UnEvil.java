@@ -13,6 +13,7 @@ public class UnEvil extends ConsoleProgram{
 			char current = s.charAt(i);
 			if(i < s.length() - 1 && current == s.charAt(i + 1)){
 				result = s.substring(0, i) + s.substring(i+2);
+				i++;
 			}
 		}
 		return result;
