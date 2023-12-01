@@ -30,7 +30,7 @@ public class wordShrugg extends ConsoleProgram {
     public void run() {
         String s = readLine();
         longestRunCompression(s);
-        println(); // Print a newline at the end
+ 
     }
 
     private void longestRunCompression(String s) {
