@@ -36,7 +36,7 @@ public class wordShrugg extends ConsoleProgram {
     private void longestRunCompression(String s) {
         int count = 1;
 
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < s.length() - 1; i++) {
             char current = s.charAt(i);
             if (current == s.charAt(i + 1)) {
                 // If the current character is the same as the next one, increment the count
