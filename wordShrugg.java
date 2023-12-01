@@ -15,7 +15,7 @@ public class wordShrugg extends ConsoleProgram {
 				count++;
 			} else {
 			System.out.print(count);
-			System.out.print(current);
+			System.out.print(s.charAt(i-1));
 			count = 1;
 			}
 		}
