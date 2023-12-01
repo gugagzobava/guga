@@ -8,8 +8,15 @@ public class grid extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private int NUM_ROWS = 5;
 	private int NUM_COLOMNS = 5;
+	private GRect firstClicked = null;
+    private GRect secondClicked = null;
 
 	public void run() {
+		drawGrid();
+		
+	}
+
+	private void drawGrid() {
 		double x = getWidth() / NUM_COLOMNS;
 		double y = getHeight() / NUM_ROWS;	
 		for (int rows = 0; rows < NUM_ROWS; rows++) {
@@ -24,6 +31,7 @@ public class grid extends GraphicsProgram {
 			
 			}
 		}
+		
 	}
 
 	private Color getRandomColor() {
