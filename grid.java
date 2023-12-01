@@ -18,7 +18,7 @@ public class grid extends GraphicsProgram {
 
 	}
 
-	public void MouseClicked(MouseEvent e) {
+	public void mouseClicked(MouseEvent e) {
 		GRect obj = (GRect) getElementAt(e.getX(), e.getY());
 		if (obj == null) {
 			return;
@@ -29,19 +29,23 @@ public class grid extends GraphicsProgram {
 			secondClicked = obj;
 		}
 		Color firstRectColor = firstClicked.getColor();
-        Color firstRectFillColor = firstClicked.getFillColor();
+		Color firstRectFillColor = firstClicked.getFillColor();
 
-        Color secondRectColor = secondClicked.getColor();
-        Color secondRectFillColor = secondClicked.getFillColor();
+		Color secondRectColor = secondClicked.getColor();
+		Color secondRectFillColor = secondClicked.getFillColor();
 
-        if (firstRectColor.equals(secondRectColor) && firstRectFillColor.equals(secondRectFillColor)) {
-            remove(firstClicked);
-            remove(secondClicked);
-        }
+		if (firstRectColor.equals(secondRectColor) && firstRectFillColor.equals(secondRectFillColor)) {
+			remove(firstClicked);
+			remove(secondClicked);
 
-        // Clear selections for the next click
-        firstClicked = null;
-        secondClicked = null;
+			// Clear selections for the next click
+			firstClicked = null;
+			secondClicked = null;
+		} else {
+			// If not a match, reset selections
+			firstClicked = null;
+			secondClicked = null;
+		}
 	}
 
 	private void drawGrid() {
