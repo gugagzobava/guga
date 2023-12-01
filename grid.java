@@ -25,7 +25,7 @@ public class grid extends GraphicsProgram {
 		}
 		if (firstClicked == null) {
 			firstClicked = obj;
-		} else if (secondClicked == null && obj != firstClicked) {
+		} else if (secondClicked == null) {
 			secondClicked = obj;
 		}
 		Color firstRectColor = firstClicked.getColor();
