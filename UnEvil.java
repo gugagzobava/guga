@@ -6,24 +6,36 @@ public class UnEvil extends ConsoleProgram {
 		println(unEvilText(s));
 
 	}
+	 private String unEvilText(String s) {
+	        String result = "";
+	        for (int i = 0; i < s.length(); i++) {
+	            char current = s.charAt(i);
+	            if (i < s.length() - 1 && current == s.charAt(i + 1)) {
+	                result = s.substring(0, i) + s.substring(i + 2);
+	                // Update i to skip the next character
+	                i++;
+	            } else {
+	                result += current;
+	            }
+	        }
+	        return result;
+	    }
 
-	private String unEvilText(String s) {
-		String result = "";
-		int count = 1;
-		for (int i = 0; i < s.length(); i++) {
-			char current = s.charAt(i);
-	//		boolean isDuplicate = false;
-			while (i < s.length() - 1 && current == s.charAt(i + 1)) {
-	//			isDuplicate = true;
-				i++;
-				count++;
-			}
-			if (count <= 2) {
-				result += current;
-			}
-
-		}
-		return result;
-	}
+//	private String unEvilText(String s) {
+//		String result = "";
+//		for (int i = 0; i < s.length(); i++) {
+//			char current = s.charAt(i);
+//			boolean isDuplicate = false;
+//			while (i < s.length() - 1 && current == s.charAt(i + 1)) {
+//				isDuplicate = true;
+//				i++;
+//			}
+//			if (!isDuplicate) {
+//				result += current;
+//			}
+//
+//		}
+//		return result;
+//	}
 
 }
