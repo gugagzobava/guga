@@ -1,7 +1,7 @@
 import acm.program.ConsoleProgram;
 
 public class dogs extends ConsoleProgram{
-	private String name;
+	private String name = "";
 	public void run (){
 		println("Welcome to grand opening of the new Freeuni dog park!");
 		while(!name.equals("")){
