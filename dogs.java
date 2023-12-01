@@ -13,7 +13,7 @@ public class dogs extends ConsoleProgram{
 			int size = readInt("How big is your dog? Enter a number; 1 - small, 2 - medium, 3 - large ");
 			int candy = 2 * size;
 			candyCounter += candy;
-			println("Oh boy! " + name + " gets " + candy + "dog treats." );
+			println("Oh boy! " + name + " gets " + candy + " dog treats." );
 		}
 	}
 
