@@ -5,11 +5,11 @@ public class frontCoding extends ConsoleProgram {
 		String a = "million";
 		String b = "millenia";
 		int count = 0;
-		int counta = a.length() - count;
-		int countb = b.length() - count;
-		String remainingA = a.substring(count - 1);
-		String remainingB = b.substring(count - 1);
-		println(FrontCoding(a, b, count));
+//		int counta = a.length() - count;
+//		int countb = b.length() - count;
+//		String remainingA = a.substring(count - 1);
+//		String remainingB = b.substring(count - 1);
+		println(FrontCoding(a, b, count) + "*");
 
 	}
 
