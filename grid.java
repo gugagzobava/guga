@@ -16,10 +16,10 @@ public class grid extends GraphicsProgram {
 		for (int rows = 0; rows < NUM_ROWS; rows++) {
 			for (int colomns = 0; colomns < NUM_COLOMNS; colomns++) {
 				GRect rect = new GRect(x, y);
-				add(rect, rows * x, colomns * y);
 				rect.setColor(color);
 				rect.setFillColor(color);
-
+				add(rect, rows * x, colomns * y);
+			
 			}
 		}
 	}
