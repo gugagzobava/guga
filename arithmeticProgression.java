@@ -8,15 +8,16 @@ public class arithmeticProgression extends ConsoleProgram {
 		while (a1 != -1) {
 			a1 = a2;
 			a2 = readInt();
-			if (a2 != a1 + d) {
-				println("Not an arithmetic progression");
-				break;
-			}
 			if (a2 == -1) {
 				println("Arithmetic progression");
 				break;
 			}
 
+			if (a2 != a1 + d) {
+				println("Not an arithmetic progression");
+				break;
+			}
+			
 		}
 	}
 }
