@@ -9,7 +9,7 @@ public class wordShrugg extends ConsoleProgram {
 
 	private void longestRunCompression(String s) {
 		int count = 1;
-		for (int i = 0; i < s.length(); i++) {
+		for (int i = 1; i < s.length(); i++) {
 			char current = s.charAt(i);
 			if (current == s.charAt(i - 1)) {
 				count++;
