@@ -24,15 +24,15 @@ public class partOfEachOther extends ConsoleProgram {
 		return true;
 	}
 
-	private int countOccurrences(String a, char current) {
-		int count = 0;
-		for (int i = 0; i < a.length(); i++) {
-			current = a.charAt(i);
-			if (Character.isLetter(current)) {
-				count++;
-			}
-		}
-		return count;
+	private int countOccurrences(String a, char target) {
+        int count = 0;
+        for (int i = 0; i < a.length(); i++) {
+            char current = a.charAt(i);
+            if (Character.isLetter(current) && current == target) {
+                count++;
+            }
+        }
+        return count;
 	}
 
 }
