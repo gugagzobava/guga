@@ -24,9 +24,9 @@ public class biggestDivisor extends ConsoleProgram{
 			}
 		}
 		if (count > 2){
-			return true;
+			return false;
 		}
-		return false;
+		return true;
 	}
 
 }
