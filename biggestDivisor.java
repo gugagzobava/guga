@@ -8,12 +8,13 @@ public class biggestDivisor extends ConsoleProgram{
 	}
 
 	private int largestPrimeDivisor(int n) {
+		int largestPrime = n;
 		for(int i = 2; i <= n; i++){
 			if(n % i == 0 && isPrime(i)){
-				return i;
+				largestPrime = i;
 			}
 		}
-		return n;
+		return largestPrime;
 	}
 
 	private boolean isPrime(int i) {
