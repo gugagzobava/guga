@@ -31,6 +31,6 @@ public class frontCoding extends ConsoleProgram {
 			remainingB = b.substring(count);
 
 		}
-		return count + result + counta + remainingA + countb + remainingB;
+		return count + result + "*" +counta + remainingA + countb + remainingB;
 	}
 }
