@@ -18,7 +18,7 @@ public class UnEvil extends ConsoleProgram {
 				i++;
 				count++;
 			}
-			if (!isDuplicate || count <= 2) {
+			if (!isDuplicate) {
 				result += current;
 			}
 
