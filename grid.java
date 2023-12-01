@@ -15,11 +15,11 @@ public class grid extends GraphicsProgram {
 		for (int rows = 0; rows < NUM_ROWS; rows++) {
 			for (int colomns = 0; colomns < NUM_COLOMNS; colomns++) {
 				GRect rect = new GRect(x, y);
-				Color color = getRandomColor();
-				
-				rect.setColor(color);
+				Color fillColor = getRandomColor();
+				Color borderColor = getRandomColor();
+				rect.setColor(fillColor);
 				rect.setFilled(true);
-				rect.setFillColor(color);
+				rect.setFillColor(borderColor);
 				add(rect, colomns * x, rows * y);
 			
 			}
