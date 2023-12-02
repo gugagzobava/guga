@@ -30,9 +30,10 @@ public class dragCircle extends GraphicsProgram {
 			r++;
 		}
 		if(dist1 < dist){
-			remove(ball);
-			ball.setSize(2*r, 2*r);
-			add(ball, getWidth() / 2 - r, getHeight() / 2 - r);
+			r--;
 		}
+		remove(ball);
+		ball.setSize(2*r, 2*r);
+		add(ball, getWidth() / 2 - r, getHeight() / 2 - r);
 	}
 }
