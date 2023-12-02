@@ -21,8 +21,8 @@ public class midterm_practice_4 extends ConsoleProgram{
 
 		private String reverse(String word) {
 			 String reversed = "";
-		        for (int i = word.length() - 1; i >= 0; i--) {
-		            reversed += word.charAt(i);
+		        for (int i = 0; i < word.length(); i++) {
+		            reversed += word.charAt(i) + reversed;
 		        }
 		        return reversed;
 		    }
