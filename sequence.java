@@ -12,7 +12,7 @@ public class sequence extends ConsoleProgram{
 			int currFlips = holdExperiment();
 			sumFlips += currFlips;
 		}
-		double avg = sumFlips / EXPERIMENTS;
+		double avg = (double) sumFlips / EXPERIMENTS;
 		println(avg);
 		
 	}
