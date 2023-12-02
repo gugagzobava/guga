@@ -7,7 +7,7 @@ public class dragCircle extends GraphicsProgram {
 	private GOval ball;
 	public void run(){
 		addMouseListeners();
-		ball = new GOval(getWidth() / 2, getHeight() / 2, 2 * r, 2 * r);
+		ball = new GOval(getWidth() / 2 - r, getHeight() / 2 - r, 2 * r, 2 * r);
 		add(ball);
 		
 		
