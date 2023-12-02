@@ -4,7 +4,7 @@ import acm.util.RandomGenerator;
 public class sequence extends ConsoleProgram{
 	private static final int EXPERIMENTS = 2;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	private double n;
+	private int n;
 	public void run(){
 		n = readInt();
 		int sumFlips = 0;
