@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 import acm.util.RandomGenerator;
 
 public class sequence extends ConsoleProgram{
-	private static final int EXPERIMENTS = 1000;
+	private static final int EXPERIMENTS = 2;
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private int n;
 	public void run(){
