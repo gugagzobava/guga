@@ -1,4 +1,4 @@
-\import acm.program.ConsoleProgram;
+import acm.program.ConsoleProgram;
 
 public class midterm2022_1_differentSymbols extends ConsoleProgram {
 	private String end = "END";
