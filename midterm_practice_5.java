@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class midterm_practice_5 extends ConsoleProgram{
 	public void run(){
 		String a = "mama mia";
-		String b = "mimanam";
+		String b = "mimaaam";
 		println(anagrams(a, b));
 		
 			
@@ -29,9 +29,8 @@ public class midterm_practice_5 extends ConsoleProgram{
 	private int countOccurrences(String a, char current) {
 		int count = 0;
         for (int i = 0; i < a.length(); i++) {
-            current = a.charAt(i);
-            if(Character.isLetter(current)){
-            	count++;
+        	if (a.charAt(i) == current && Character.isLetter(current)) {
+                count++;
             }
         }
 		return count;
