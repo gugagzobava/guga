@@ -9,10 +9,20 @@ public class problem55 extends ConsoleProgram {
 		for (int i = 0; i < n; i++) {
 			numbers[i] = readInt();
 		}
-		Arrays.sort(numbers);
-	
-	  for (int i = 0; i < n; i++) {
-          print(numbers[i]);
-	  }
-}
+		if (isSorted(numbers)) {
+            println("The numbers are sorted.");
+        } else {
+            println("The numbers are not sorted.");
+        }
+
+	}
+
+	private boolean isSorted(int[] numbers) {
+		for(int i = 0; i < numbers.length; i++){
+			if(numbers[i - 1] < numbers[i]){
+				return true;
+			}
+		}
+		return false;
+	}
 }
