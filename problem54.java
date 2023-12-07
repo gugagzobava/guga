@@ -16,7 +16,7 @@ public class problem54 extends ConsoleProgram{
         		secondLargest = curr[i];
         	}
         }
-        println(largest + "and" + secondLargest + "are biggest numbers");
+        println(largest + " and " + secondLargest + "are biggest numbers");
 	}
 
 }
