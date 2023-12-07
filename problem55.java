@@ -19,10 +19,10 @@ public class problem55 extends ConsoleProgram {
 
 	private boolean isSorted(int[] numbers) {
 		for(int i = 1; i < numbers.length; i++){
-			if(numbers[i - 1] < numbers[i]){
-				return true;
+			if(numbers[i - 1] > numbers[i]){
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 }
