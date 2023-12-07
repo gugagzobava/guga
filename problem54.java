@@ -6,7 +6,7 @@ public class problem54 extends ConsoleProgram{
 		int[] numbers = new int[n];
 
         for (int i = 0; i < n; i++) {
-        	
+        	numbers[i] = readInt();
         }
 	}
 
