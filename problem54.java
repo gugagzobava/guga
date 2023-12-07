@@ -9,11 +9,11 @@ public class problem54 extends ConsoleProgram{
         for (int i = 0; i < n; i++) {
         	curr[i] = readInt();
         	if(curr[i] > largest){
-        		largest = secondLargest;
-        		curr[i] = largest;     		
+        		secondLargest = largest;
+        		largest = curr[i];     		
         	}
         	if(curr[i] > secondLargest && curr[i] < largest){
-        		curr[i] = secondLargest;
+        		secondLargest = curr[i];
         	}
         }
         println(largest + "and" + secondLargest + "are biggest numbers");
