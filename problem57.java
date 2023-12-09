@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class problem57 extends ConsoleProgram {
 	public void run() {
 		String a = "ai ra mzis";
-		String b = "sizmari";
+		String b = "sizmaria";
 		println(isAnagram(a, b));
 	}
 
