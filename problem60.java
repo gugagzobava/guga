@@ -1,4 +1,21 @@
+import java.util.ArrayList;
 
-public class problem60 {
+import acm.program.ConsoleProgram;
+public class problem60 extends ConsoleProgram {
+	private static final int SENTINEL =-1;
+	public void run(){
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		while(true){
+			int n = readInt();
+			if(n == SENTINEL){
+				break;
+			}
+			list.add(n);
+		}
+		for(int i = list.size()-1; i >= 0; i--){
+			println(list.get(i));
+		}
+		
+	}
 
 }
