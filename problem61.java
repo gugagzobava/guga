@@ -16,7 +16,7 @@ public class problem61 extends ConsoleProgram {
 			for (int j = 0; j < i; j++) {
 				if (array[i] == m - array[i]) {
 					found = true;
-					println(i + " " + j);
+					println(array[i] + " " + array[j]);
 					break;
 				}
 			}
