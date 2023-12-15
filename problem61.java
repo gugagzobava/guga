@@ -14,7 +14,7 @@ public class problem61 extends ConsoleProgram {
 		boolean found = false;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < i; j++) {
-				if (array[i] == m - array[i]) {
+				if (array[i] == m - array[j]) {
 					found = true;
 					println(array[i] + " " + array[j]);
 					break;
