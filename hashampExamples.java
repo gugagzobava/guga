@@ -10,7 +10,7 @@ public class hashampExamples extends ConsoleProgram{
 		hashMap.put("ABDD", 2000);
 		hashMap.put("ABC", 3000);
 		println(hashMap.size());
-		
+		println(hashMap.toString());
 	}
 
 }
