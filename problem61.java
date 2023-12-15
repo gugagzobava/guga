@@ -19,7 +19,7 @@ public class problem61 extends ConsoleProgram {
 				println(array[i] + " " + (m - array[i]));
 				break;
 			}
-		//	hashMap.put(array[i], i);
+			hashMap.put(array[i], i);
 		}
 
 		if (!found) {
