@@ -8,7 +8,7 @@ public class problem61 extends ConsoleProgram {
 		int m = readInt();
 		int n = readInt();
 		for(int i = 0; i < n; i++){
-			n = readInt();
+			int numbers = readInt();
 		}
 	}
 
