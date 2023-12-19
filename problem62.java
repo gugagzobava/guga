@@ -4,7 +4,7 @@ import com.sun.javafx.collections.MappingChange.Map;
 
 import acm.program.ConsoleProgram;
 
-public class probolem62 extends ConsoleProgram {
+public class problem62 extends ConsoleProgram {
 	public void run(){
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		while(true){
