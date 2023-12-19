@@ -1,7 +1,4 @@
 import java.util.HashMap;
-
-import com.sun.javafx.collections.MappingChange.Map;
-
 import acm.program.ConsoleProgram;
 
 public class problem62 extends ConsoleProgram {
