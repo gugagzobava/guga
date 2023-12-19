@@ -13,7 +13,7 @@ public class problem63 extends ConsoleProgram {
 			if (line.isEmpty()) {
 				break;
 			}
-			StringTokenizer tokenizer = new StringTokenizer(readLine());
+			StringTokenizer tokenizer = new StringTokenizer(line);
 			String a = tokenizer.nextToken();
 			String b = tokenizer.nextToken();
 			map.putIfAbsent(b, new HashSet<String>());
