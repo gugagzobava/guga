@@ -1,4 +1,20 @@
+import java.util.HashMap;
 
-public class probolem62 {
+import com.sun.javafx.collections.MappingChange.Map;
+
+import acm.program.ConsoleProgram;
+
+public class probolem62 extends ConsoleProgram {
+	public void run(){
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		while(true){
+			String name = readLine();
+			if(name.isEmpty()){
+				break;
+			}
+			map.put(name, map.getOrDefault(name, 0) + 1);
+		}
+		println(map);
+	}
 
 }
