@@ -11,7 +11,7 @@ public class problem68 extends GraphicsProgram {
 
 	public void init() {
 		textField = new JTextField(20);
-		enterButton = new JButton();
+		enterButton = new JButton("enter");
 		add(textField, SOUTH);
         add(enterButton, SOUTH);
         textField.addActionListener(this);
