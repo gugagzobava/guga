@@ -15,14 +15,14 @@ public class problem68 extends GraphicsProgram {
 		add(textField, SOUTH);
         add(enterButton, SOUTH);
         textField.addActionListener(this);
-        addActionListeners();
+   //     addActionListeners();
 	}
 
 	public void run() {
 		
 	}
 	 public void actionPerformed(ActionEvent e) {
-		 println("here");
+	//	 println("here");
 		 if(e.getSource() == textField){
 			 String text = textField.getText();
 			 println(text);
