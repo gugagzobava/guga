@@ -29,7 +29,6 @@ public class problem63 extends ConsoleProgram {
 			}
 		}
 		println(name);
-		println(map);
 	}
 
 }
