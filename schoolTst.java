@@ -7,7 +7,6 @@ public class schoolTst extends ConsoleProgram {
 		School school = new School();
 		school.addTeacher("mari");
 		school.addTeacher("nino");
-
 		school.addSubject("mari", "cs");
 		school.addSubject("mari", "math");
 		school.addSubject("nino", "physics");
