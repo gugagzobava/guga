@@ -15,7 +15,7 @@ public class School {
 	}
 	public void addTeacher(String teacher) {
 		if (!teachersMap.containsKey(teacher)) {
-			teachersMap.put(teacher, subjects);
+			teachersMap.put(teacher, new HashSet<String>());
 		}
 	}
 	public void addSubject(String teacher, String subject) {
