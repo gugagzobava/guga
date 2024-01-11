@@ -10,12 +10,11 @@ public class School {
 	public School() {
 		teachersMap = new HashMap<String, Set<String>>();
 		pupilsMap = new HashMap<String, Set<String>>();
-		subjects = new HashSet<String>();
 
 	}
 	public void addTeacher(String teacher) {
 		if (!teachersMap.containsKey(teacher)) {
-			teachersMap.put(teacher, subjects);
+			teachersMap.put(teacher, new HashSet<String>());
 		}
 	}
 	public void addSubject(String teacher, String subject) {
@@ -25,7 +24,7 @@ public class School {
 	}
 	public void addPupil(String pupil, String subject) {
 		if (!pupilsMap.containsKey(pupil)) {
-			pupilsMap.put(pupil, subjects);
+			pupilsMap.put(pupil, new HashSet<String>());
 		}
 	}
 	public Iterator<String> getTeachers(String pupil) {
