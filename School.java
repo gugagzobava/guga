@@ -26,6 +26,7 @@ public class School {
 		if (!pupilsMap.containsKey(pupil)) {
 			pupilsMap.put(pupil, new HashSet<String>());
 		}
+		pupilsMap.get(pupil).add(subject);
 	}
 	public Iterator<String> getTeachers(String pupil) {
 		if (pupilsMap.containsKey(pupil)) {
