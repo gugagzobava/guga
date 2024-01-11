@@ -6,7 +6,6 @@ import java.util.Set;
 public class School {
 	private HashMap<String, Set<String>> teachersMap;
 	private HashMap<String, Set<String>> pupilsMap;
-	private HashSet<String> subjects;
 	public School() {
 		teachersMap = new HashMap<String, Set<String>>();
 		pupilsMap = new HashMap<String, Set<String>>();
